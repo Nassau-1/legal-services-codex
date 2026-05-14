@@ -1,0 +1,4 @@
+interface:
+  display_name: "Material Contract Schedule"
+  short_description: ">"
+  default_prompt: "Use $material-contract-schedule when you need to >."

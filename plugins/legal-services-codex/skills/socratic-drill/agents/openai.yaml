@@ -1,0 +1,4 @@
+interface:
+  display_name: "Socratic Drill"
+  short_description: ">"
+  default_prompt: "Use $socratic-drill when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Launch Review"
+  short_description: ">"
+  default_prompt: "Use $launch-review when you need to >."

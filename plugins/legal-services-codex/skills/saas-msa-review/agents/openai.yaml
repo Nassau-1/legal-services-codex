@@ -1,0 +1,4 @@
+interface:
+  display_name: "Saas MSA Review"
+  short_description: ">"
+  default_prompt: "Use $saas-msa-review when you need to >."

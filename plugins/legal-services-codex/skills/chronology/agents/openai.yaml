@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chronology"
+  short_description: "Build or update a chronology from declared document sources and uploads \u2014 dated events extracted, de-duped,..."
+  default_prompt: "Use $chronology when you need to build or update a chronology from declared document sources and uploads \u2014 dated events extracted, de-duped,."

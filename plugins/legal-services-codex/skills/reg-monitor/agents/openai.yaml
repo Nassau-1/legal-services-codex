@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reg Monitor"
+  short_description: "Generate legal and compliance change digests"
+  default_prompt: "Use $reg-monitor to summarize new regulatory developments since last Friday."

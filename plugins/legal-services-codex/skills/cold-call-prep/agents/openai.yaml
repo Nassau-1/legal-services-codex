@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cold Call Prep"
+  short_description: ">"
+  default_prompt: "Use $cold-call-prep when you need to >."

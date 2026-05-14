@@ -1,0 +1,4 @@
+interface:
+  display_name: "Policy Diff"
+  short_description: "Diff a specific regulatory change against the indexed policy library."
+  default_prompt: "Use $policy-diff when you need to diff a specific regulatory change against the indexed policy library."

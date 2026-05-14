@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto Updater"
+  short_description: ">"
+  default_prompt: "Use $auto-updater when you need to >."

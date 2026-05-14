@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft"
+  short_description: ">"
+  default_prompt: "Use $draft when you need to >."

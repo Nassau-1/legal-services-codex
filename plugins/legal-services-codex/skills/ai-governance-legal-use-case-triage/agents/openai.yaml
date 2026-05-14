@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Governance Legal Use Case Triage"
+  short_description: ">"
+  default_prompt: "Use $ai-governance-legal-use-case-triage when you need to >."

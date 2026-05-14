@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outline Builder"
+  short_description: ">"
+  default_prompt: "Use $outline-builder when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Status"
+  short_description: "Roll up the portfolio from _log.yaml \u2014 risk distribution, upcoming deadlines, stale matters, materiality to..."
+  default_prompt: "Use $portfolio-status when you need to roll up the portfolio from _log.yaml \u2014 risk distribution, upcoming deadlines, stale matters, materiality to."

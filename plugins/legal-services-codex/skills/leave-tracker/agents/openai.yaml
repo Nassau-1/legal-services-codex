@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leave Tracker"
+  short_description: ">"
+  default_prompt: "Use $leave-tracker when you need to >."

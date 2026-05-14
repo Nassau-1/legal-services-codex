@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matter Close"
+  short_description: "Close a matter \u2014 capture outcome, final exposure, and lessons, then archive it out of the active portfolio..."
+  default_prompt: "Use $matter-close when you need to close a matter \u2014 capture outcome, final exposure, and lessons, then archive it out of the active portfolio."

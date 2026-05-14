@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Manager"
+  short_description: ">"
+  default_prompt: "Use $skill-manager when you need to >."

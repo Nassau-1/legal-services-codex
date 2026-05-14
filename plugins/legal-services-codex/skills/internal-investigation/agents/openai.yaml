@@ -1,0 +1,4 @@
+interface:
+  display_name: "Internal Investigation"
+  short_description: ">"
+  default_prompt: "Use $internal-investigation when you need to >."

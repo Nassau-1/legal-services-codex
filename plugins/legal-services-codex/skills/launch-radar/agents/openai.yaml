@@ -1,0 +1,4 @@
+interface:
+  display_name: "Launch Radar"
+  short_description: "Triage upcoming launches for legal review"
+  default_prompt: "Use $launch-radar to screen this week's launch tracker for legal routing."

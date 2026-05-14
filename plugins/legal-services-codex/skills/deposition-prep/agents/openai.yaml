@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deposition Prep"
+  short_description: "Build a deposition outline for a witness \u2014 pull their documents from the eDiscovery platform, organize topi..."
+  default_prompt: "Use $deposition-prep when you need to build a deposition outline for a witness \u2014 pull their documents from the eDiscovery platform, organize topi."

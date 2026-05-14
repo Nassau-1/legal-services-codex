@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Risk Assessment"
+  short_description: ">"
+  default_prompt: "Use $feature-risk-assessment when you need to >."

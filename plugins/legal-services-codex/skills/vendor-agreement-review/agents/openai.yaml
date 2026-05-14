@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vendor Agreement Review"
+  short_description: ">"
+  default_prompt: "Use $vendor-agreement-review when you need to >."

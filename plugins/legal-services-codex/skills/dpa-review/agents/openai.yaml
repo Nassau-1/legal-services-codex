@@ -1,0 +1,4 @@
+interface:
+  display_name: "DPA Review"
+  short_description: ">"
+  default_prompt: "Use $dpa-review when you need to >."

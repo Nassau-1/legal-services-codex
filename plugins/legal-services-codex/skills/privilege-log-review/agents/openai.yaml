@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privilege Log Review"
+  short_description: "First-pass privilege log review \u2014 make the obvious privilege calls and flag the hard ones for attorney revi..."
+  default_prompt: "Use $privilege-log-review when you need to first-pass privilege log review \u2014 make the obvious privilege calls and flag the hard ones for attorney revi."

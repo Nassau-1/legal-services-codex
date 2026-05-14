@@ -1,0 +1,1760 @@
+{
+  "generated_at": "2026-05-14T16:29:16.550562+02:00",
+  "plugins": {
+    "ai-governance-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/ai-governance-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "documents",
+          "chat",
+          "email"
+        ]
+      },
+      "skills": [
+        {
+          "name": "ai-inventory",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/ai-inventory",
+          "destination": "codex/skills/ai-governance-legal/ai-inventory",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "aia-generation",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/aia-generation",
+          "destination": "codex/skills/ai-governance-legal/aia-generation",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/cold-start-interview",
+          "destination": "codex/skills/ai-governance-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/customize",
+          "destination": "codex/skills/ai-governance-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/matter-workspace",
+          "destination": "codex/skills/ai-governance-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-monitor",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/policy-monitor",
+          "destination": "codex/skills/ai-governance-legal/policy-monitor",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-starter",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/policy-starter",
+          "destination": "codex/skills/ai-governance-legal/policy-starter",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "reg-gap-analysis",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/reg-gap-analysis",
+          "destination": "codex/skills/ai-governance-legal/reg-gap-analysis",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "use-case-triage",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/use-case-triage",
+          "destination": "codex/skills/ai-governance-legal/use-case-triage",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "vendor-ai-review",
+          "source": "plugins/vertical-plugins/ai-governance-legal/skills/vendor-ai-review",
+          "destination": "codex/skills/ai-governance-legal/vendor-ai-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "commercial-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/commercial-legal",
+      "mcp": {
+        "mcpServers": {
+          "Ironclad": {
+            "type": "http",
+            "url": "https://mcp.na1.ironcladapp.com/mcp",
+            "title": "Ironclad",
+            "description": "Search your contract repository and workflows using plain language \u2014 expiring MSAs, termination clauses, vendor agreements \u2014 scoped to your permissions."
+          },
+          "DocuSign": {
+            "type": "http",
+            "url": "https://mcp.docusign.com/mcp",
+            "title": "DocuSign",
+            "description": "Agreement search, status tracking, and signature workflows."
+          },
+          "iManage": {
+            "type": "http",
+            "url": "https://cloudimanage.com/mcp/work",
+            "title": "iManage",
+            "description": "Governed iManage content connected to Claude \u2014 documents stay in iManage, access is permission-bound and auditable."
+          },
+          "TopCounsel": {
+            "type": "http",
+            "url": "https://api.techgc.co/api/mcp/topcounsel",
+            "title": "TopCounsel",
+            "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence."
+          },
+          "Definely": {
+            "type": "http",
+            "url": "https://mcp.uk.definely.com/api/proxy/core-mcp",
+            "title": "Definely",
+            "description": "Live, deterministic access to contract structure \u2014 resolve definitions, validate cross-references, map dependencies, run structural diffs."
+          },
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "contract-management",
+          "e-signature",
+          "legal-document-management",
+          "email",
+          "documents",
+          "chat",
+          "contract-review",
+          "outside-counsel-network"
+        ]
+      },
+      "skills": [
+        {
+          "name": "amendment-history",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/amendment-history",
+          "destination": "codex/skills/commercial-legal/amendment-history",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/cold-start-interview",
+          "destination": "codex/skills/commercial-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/customize",
+          "destination": "codex/skills/commercial-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "escalation-flagger",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/escalation-flagger",
+          "destination": "codex/skills/commercial-legal/escalation-flagger",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/matter-workspace",
+          "destination": "codex/skills/commercial-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "nda-review",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/nda-review",
+          "destination": "codex/skills/commercial-legal/nda-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "renewal-tracker",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/renewal-tracker",
+          "destination": "codex/skills/commercial-legal/renewal-tracker",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "review",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/review",
+          "destination": "codex/skills/commercial-legal/review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "review-proposals",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/review-proposals",
+          "destination": "codex/skills/commercial-legal/review-proposals",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "saas-msa-review",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/saas-msa-review",
+          "destination": "codex/skills/commercial-legal/saas-msa-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "stakeholder-summary",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/stakeholder-summary",
+          "destination": "codex/skills/commercial-legal/stakeholder-summary",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "vendor-agreement-review",
+          "source": "plugins/vertical-plugins/commercial-legal/skills/vendor-agreement-review",
+          "destination": "codex/skills/commercial-legal/vendor-agreement-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "corporate-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/corporate-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "Box": {
+            "type": "http",
+            "url": "https://mcp.box.com/mcp",
+            "title": "Box",
+            "description": "Data room and document management."
+          },
+          "iManage": {
+            "type": "http",
+            "url": "https://cloudimanage.com/mcp/work",
+            "title": "iManage",
+            "description": "Governed iManage content connected to Claude \u2014 documents stay in iManage, access is permission-bound and auditable."
+          },
+          "TopCounsel": {
+            "type": "http",
+            "url": "https://api.techgc.co/api/mcp/topcounsel",
+            "title": "TopCounsel",
+            "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence."
+          },
+          "Definely": {
+            "type": "http",
+            "url": "https://mcp.uk.definely.com/api/proxy/core-mcp",
+            "title": "Definely",
+            "description": "Live, deterministic access to contract structure \u2014 resolve definitions, validate cross-references, map dependencies, run structural diffs."
+          },
+          "Solve Intelligence": {
+            "type": "http",
+            "url": "https://api.solveintelligence.com/mcp/",
+            "title": "Solve Intelligence",
+            "description": "Patent workflows \u2014 search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis."
+          }
+        },
+        "recommendedCategories": [
+          "legal-document-management",
+          "virtual-data-room",
+          "contract-review",
+          "board-governance",
+          "documents",
+          "chat",
+          "email"
+        ]
+      },
+      "skills": [
+        {
+          "name": "ai-tool-handoff",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/ai-tool-handoff",
+          "destination": "codex/skills/corporate-legal/ai-tool-handoff",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "board-minutes",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/board-minutes",
+          "destination": "codex/skills/corporate-legal/board-minutes",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "closing-checklist",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/closing-checklist",
+          "destination": "codex/skills/corporate-legal/closing-checklist",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/cold-start-interview",
+          "destination": "codex/skills/corporate-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/customize",
+          "destination": "codex/skills/corporate-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "deal-team-summary",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/deal-team-summary",
+          "destination": "codex/skills/corporate-legal/deal-team-summary",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "diligence-issue-extraction",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/diligence-issue-extraction",
+          "destination": "codex/skills/corporate-legal/diligence-issue-extraction",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "entity-compliance",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/entity-compliance",
+          "destination": "codex/skills/corporate-legal/entity-compliance",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "integration-management",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/integration-management",
+          "destination": "codex/skills/corporate-legal/integration-management",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "material-contract-schedule",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/material-contract-schedule",
+          "destination": "codex/skills/corporate-legal/material-contract-schedule",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/matter-workspace",
+          "destination": "codex/skills/corporate-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "tabular-review",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/tabular-review",
+          "destination": "codex/skills/corporate-legal/tabular-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "written-consent",
+          "source": "plugins/vertical-plugins/corporate-legal/skills/written-consent",
+          "destination": "codex/skills/corporate-legal/written-consent",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "employment-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/employment-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "hris",
+          "documents",
+          "chat",
+          "email"
+        ]
+      },
+      "skills": [
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/employment-legal/skills/cold-start-interview",
+          "destination": "codex/skills/employment-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/employment-legal/skills/customize",
+          "destination": "codex/skills/employment-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "expansion-kickoff",
+          "source": "plugins/vertical-plugins/employment-legal/skills/expansion-kickoff",
+          "destination": "codex/skills/employment-legal/expansion-kickoff",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "expansion-update",
+          "source": "plugins/vertical-plugins/employment-legal/skills/expansion-update",
+          "destination": "codex/skills/employment-legal/expansion-update",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "handbook-updates",
+          "source": "plugins/vertical-plugins/employment-legal/skills/handbook-updates",
+          "destination": "codex/skills/employment-legal/handbook-updates",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "hiring-review",
+          "source": "plugins/vertical-plugins/employment-legal/skills/hiring-review",
+          "destination": "codex/skills/employment-legal/hiring-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "internal-investigation",
+          "source": "plugins/vertical-plugins/employment-legal/skills/internal-investigation",
+          "destination": "codex/skills/employment-legal/internal-investigation",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "international-expansion",
+          "source": "plugins/vertical-plugins/employment-legal/skills/international-expansion",
+          "destination": "codex/skills/employment-legal/international-expansion",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "investigation-add",
+          "source": "plugins/vertical-plugins/employment-legal/skills/investigation-add",
+          "destination": "codex/skills/employment-legal/investigation-add",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "investigation-memo",
+          "source": "plugins/vertical-plugins/employment-legal/skills/investigation-memo",
+          "destination": "codex/skills/employment-legal/investigation-memo",
+          "findings": []
+        },
+        {
+          "name": "investigation-open",
+          "source": "plugins/vertical-plugins/employment-legal/skills/investigation-open",
+          "destination": "codex/skills/employment-legal/investigation-open",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "investigation-query",
+          "source": "plugins/vertical-plugins/employment-legal/skills/investigation-query",
+          "destination": "codex/skills/employment-legal/investigation-query",
+          "findings": []
+        },
+        {
+          "name": "investigation-summary",
+          "source": "plugins/vertical-plugins/employment-legal/skills/investigation-summary",
+          "destination": "codex/skills/employment-legal/investigation-summary",
+          "findings": []
+        },
+        {
+          "name": "leave-tracker",
+          "source": "plugins/vertical-plugins/employment-legal/skills/leave-tracker",
+          "destination": "codex/skills/employment-legal/leave-tracker",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "log-leave",
+          "source": "plugins/vertical-plugins/employment-legal/skills/log-leave",
+          "destination": "codex/skills/employment-legal/log-leave",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/employment-legal/skills/matter-workspace",
+          "destination": "codex/skills/employment-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-drafting",
+          "source": "plugins/vertical-plugins/employment-legal/skills/policy-drafting",
+          "destination": "codex/skills/employment-legal/policy-drafting",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "termination-review",
+          "source": "plugins/vertical-plugins/employment-legal/skills/termination-review",
+          "destination": "codex/skills/employment-legal/termination-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "wage-hour-qa",
+          "source": "plugins/vertical-plugins/employment-legal/skills/wage-hour-qa",
+          "destination": "codex/skills/employment-legal/wage-hour-qa",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "worker-classification",
+          "source": "plugins/vertical-plugins/employment-legal/skills/worker-classification",
+          "destination": "codex/skills/employment-legal/worker-classification",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "ip-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/ip-legal",
+      "mcp": {
+        "mcpServers": {
+          "Solve Intelligence": {
+            "type": "http",
+            "url": "https://api.solveintelligence.com/mcp/",
+            "title": "Solve Intelligence",
+            "description": "Patent workflows \u2014 search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis."
+          },
+          "CourtListener": {
+            "type": "http",
+            "url": "https://mcp.courtlistener.com/",
+            "title": "CourtListener",
+            "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification."
+          },
+          "Descrybe": {
+            "type": "http",
+            "url": "https://mcp.descrybe.com/mcp",
+            "title": "Descrybe",
+            "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language."
+          },
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "ip-management",
+          "legal-research",
+          "case-law",
+          "documents",
+          "chat",
+          "email"
+        ]
+      },
+      "skills": [
+        {
+          "name": "cease-desist",
+          "source": "plugins/vertical-plugins/ip-legal/skills/cease-desist",
+          "destination": "codex/skills/ip-legal/cease-desist",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "clearance",
+          "source": "plugins/vertical-plugins/ip-legal/skills/clearance",
+          "destination": "codex/skills/ip-legal/clearance",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/ip-legal/skills/cold-start-interview",
+          "destination": "codex/skills/ip-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/ip-legal/skills/customize",
+          "destination": "codex/skills/ip-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "fto-triage",
+          "source": "plugins/vertical-plugins/ip-legal/skills/fto-triage",
+          "destination": "codex/skills/ip-legal/fto-triage",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "infringement-triage",
+          "source": "plugins/vertical-plugins/ip-legal/skills/infringement-triage",
+          "destination": "codex/skills/ip-legal/infringement-triage",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "invention-intake",
+          "source": "plugins/vertical-plugins/ip-legal/skills/invention-intake",
+          "destination": "codex/skills/ip-legal/invention-intake",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "ip-clause-review",
+          "source": "plugins/vertical-plugins/ip-legal/skills/ip-clause-review",
+          "destination": "codex/skills/ip-legal/ip-clause-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/ip-legal/skills/matter-workspace",
+          "destination": "codex/skills/ip-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "oss-review",
+          "source": "plugins/vertical-plugins/ip-legal/skills/oss-review",
+          "destination": "codex/skills/ip-legal/oss-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "portfolio",
+          "source": "plugins/vertical-plugins/ip-legal/skills/portfolio",
+          "destination": "codex/skills/ip-legal/portfolio",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "takedown",
+          "source": "plugins/vertical-plugins/ip-legal/skills/takedown",
+          "destination": "codex/skills/ip-legal/takedown",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "law-student": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/law-student",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "CourtListener": {
+            "type": "http",
+            "url": "https://mcp.courtlistener.com/",
+            "title": "CourtListener",
+            "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification."
+          },
+          "Descrybe": {
+            "type": "http",
+            "url": "https://mcp.descrybe.com/mcp",
+            "title": "Descrybe",
+            "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language."
+          }
+        },
+        "recommendedCategories": [
+          "legal-research",
+          "case-law",
+          "documents",
+          "chat"
+        ]
+      },
+      "skills": [
+        {
+          "name": "bar-prep-questions",
+          "source": "plugins/vertical-plugins/law-student/skills/bar-prep-questions",
+          "destination": "codex/skills/law-student/bar-prep-questions",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "case-brief",
+          "source": "plugins/vertical-plugins/law-student/skills/case-brief",
+          "destination": "codex/skills/law-student/case-brief",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-call-prep",
+          "source": "plugins/vertical-plugins/law-student/skills/cold-call-prep",
+          "destination": "codex/skills/law-student/cold-call-prep",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/law-student/skills/cold-start-interview",
+          "destination": "codex/skills/law-student/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/law-student/skills/customize",
+          "destination": "codex/skills/law-student/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "exam-forecast",
+          "source": "plugins/vertical-plugins/law-student/skills/exam-forecast",
+          "destination": "codex/skills/law-student/exam-forecast",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "flashcards",
+          "source": "plugins/vertical-plugins/law-student/skills/flashcards",
+          "destination": "codex/skills/law-student/flashcards",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "irac-practice",
+          "source": "plugins/vertical-plugins/law-student/skills/irac-practice",
+          "destination": "codex/skills/law-student/irac-practice",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "legal-writing",
+          "source": "plugins/vertical-plugins/law-student/skills/legal-writing",
+          "destination": "codex/skills/law-student/legal-writing",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "outline-builder",
+          "source": "plugins/vertical-plugins/law-student/skills/outline-builder",
+          "destination": "codex/skills/law-student/outline-builder",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "session",
+          "source": "plugins/vertical-plugins/law-student/skills/session",
+          "destination": "codex/skills/law-student/session",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "socratic-drill",
+          "source": "plugins/vertical-plugins/law-student/skills/socratic-drill",
+          "destination": "codex/skills/law-student/socratic-drill",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "study-plan",
+          "source": "plugins/vertical-plugins/law-student/skills/study-plan",
+          "destination": "codex/skills/law-student/study-plan",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "legal-builder-hub": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/legal-builder-hub",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "Lawve AI": {
+            "type": "http",
+            "url": "https://mcp.lawve.ai/mcp",
+            "title": "Lawve AI",
+            "description": "Curated library of legal AI skills written by practicing lawyers, in-house counsel, and legal technologists."
+          }
+        },
+        "recommendedCategories": [
+          "legal-skills-registry",
+          "chat",
+          "documents"
+        ]
+      },
+      "skills": [
+        {
+          "name": "auto-updater",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/auto-updater",
+          "destination": "codex/skills/legal-builder-hub/auto-updater",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/cold-start-interview",
+          "destination": "codex/skills/legal-builder-hub/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/customize",
+          "destination": "codex/skills/legal-builder-hub/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "disable",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/disable",
+          "destination": "codex/skills/legal-builder-hub/disable",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "registry-browser",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/registry-browser",
+          "destination": "codex/skills/legal-builder-hub/registry-browser",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "related-skills-surfacer",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/related-skills-surfacer",
+          "destination": "codex/skills/legal-builder-hub/related-skills-surfacer",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "skill-installer",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/skill-installer",
+          "destination": "codex/skills/legal-builder-hub/skill-installer",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "skill-manager",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/skill-manager",
+          "destination": "codex/skills/legal-builder-hub/skill-manager",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "skills-qa",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/skills-qa",
+          "destination": "codex/skills/legal-builder-hub/skills-qa",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "uninstall",
+          "source": "plugins/vertical-plugins/legal-builder-hub/skills/uninstall",
+          "destination": "codex/skills/legal-builder-hub/uninstall",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "legal-clinic": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/legal-clinic",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "CourtListener": {
+            "type": "http",
+            "url": "https://mcp.courtlistener.com/",
+            "title": "CourtListener",
+            "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification."
+          },
+          "Courtroom5": {
+            "type": "http",
+            "url": "https://mcp.courtroom5.com",
+            "description": "Courtroom5 \u2014 jurisdiction-aware guidance for self-represented litigants: case intake, deadline calculations, procedural next steps"
+          },
+          "Descrybe": {
+            "type": "http",
+            "url": "https://mcp.descrybe.com/mcp",
+            "title": "Descrybe",
+            "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language."
+          }
+        },
+        "recommendedCategories": [
+          "case-management",
+          "legal-research",
+          "case-law",
+          "licensing-boards",
+          "documents",
+          "chat"
+        ]
+      },
+      "skills": [
+        {
+          "name": "build-guide",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/build-guide",
+          "destination": "codex/skills/legal-clinic/build-guide",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "client-comms-log",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/client-comms-log",
+          "destination": "codex/skills/legal-clinic/client-comms-log",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "client-intake",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/client-intake",
+          "destination": "codex/skills/legal-clinic/client-intake",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "client-letter",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/client-letter",
+          "destination": "codex/skills/legal-clinic/client-letter",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/cold-start-interview",
+          "destination": "codex/skills/legal-clinic/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/customize",
+          "destination": "codex/skills/legal-clinic/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "deadlines",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/deadlines",
+          "destination": "codex/skills/legal-clinic/deadlines",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "draft",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/draft",
+          "destination": "codex/skills/legal-clinic/draft",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "form-generation",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/form-generation",
+          "destination": "codex/skills/legal-clinic/form-generation",
+          "findings": []
+        },
+        {
+          "name": "memo",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/memo",
+          "destination": "codex/skills/legal-clinic/memo",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "plain-language-letters",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/plain-language-letters",
+          "destination": "codex/skills/legal-clinic/plain-language-letters",
+          "findings": []
+        },
+        {
+          "name": "ramp",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/ramp",
+          "destination": "codex/skills/legal-clinic/ramp",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "research-start",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/research-start",
+          "destination": "codex/skills/legal-clinic/research-start",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "semester-handoff",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/semester-handoff",
+          "destination": "codex/skills/legal-clinic/semester-handoff",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "status",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/status",
+          "destination": "codex/skills/legal-clinic/status",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "supervisor-review-queue",
+          "source": "plugins/vertical-plugins/legal-clinic/skills/supervisor-review-queue",
+          "destination": "codex/skills/legal-clinic/supervisor-review-queue",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "litigation-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/litigation-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "Everlaw": {
+            "type": "http",
+            "url": "https://api.everlaw.com/v1/mcp",
+            "title": "Everlaw",
+            "description": "Search, organize, and retrieve documents from your Everlaw projects \u2014 metadata, keywords, document types \u2014 with review links."
+          },
+          "TopCounsel": {
+            "type": "http",
+            "url": "https://api.techgc.co/api/mcp/topcounsel",
+            "title": "TopCounsel",
+            "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence."
+          },
+          "CourtListener": {
+            "type": "http",
+            "url": "https://mcp.courtlistener.com/",
+            "title": "CourtListener",
+            "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification."
+          },
+          "Aurora": {
+            "type": "http",
+            "url": "https://mcp.ai.consilio.com",
+            "title": "Aurora",
+            "description": "Read-only Consilio ediscovery \u2014 find matters, list workspaces, full-text search, AI-powered cross-matter investigations, every record cited to source."
+          },
+          "Trellis": {
+            "type": "http",
+            "url": "https://mcp.trellis.law/anthropic",
+            "title": "Trellis",
+            "description": "The largest state trial court dataset in the U.S. \u2014 dockets, rulings, verdicts, filings, judge and opposing counsel analytics, expert witness vetting."
+          }
+        },
+        "recommendedCategories": [
+          "ediscovery",
+          "legal-research",
+          "case-law",
+          "court-analytics",
+          "outside-counsel-network",
+          "documents",
+          "chat"
+        ]
+      },
+      "skills": [
+        {
+          "name": "brief-section-drafter",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/brief-section-drafter",
+          "destination": "codex/skills/litigation-legal/brief-section-drafter",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "chronology",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/chronology",
+          "destination": "codex/skills/litigation-legal/chronology",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "claim-chart",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/claim-chart",
+          "destination": "codex/skills/litigation-legal/claim-chart",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/cold-start-interview",
+          "destination": "codex/skills/litigation-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/customize",
+          "destination": "codex/skills/litigation-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "demand-draft",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/demand-draft",
+          "destination": "codex/skills/litigation-legal/demand-draft",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "demand-intake",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/demand-intake",
+          "destination": "codex/skills/litigation-legal/demand-intake",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "demand-received",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/demand-received",
+          "destination": "codex/skills/litigation-legal/demand-received",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "deposition-prep",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/deposition-prep",
+          "destination": "codex/skills/litigation-legal/deposition-prep",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "legal-hold",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/legal-hold",
+          "destination": "codex/skills/litigation-legal/legal-hold",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-briefing",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/matter-briefing",
+          "destination": "codex/skills/litigation-legal/matter-briefing",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-close",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/matter-close",
+          "destination": "codex/skills/litigation-legal/matter-close",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-intake",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/matter-intake",
+          "destination": "codex/skills/litigation-legal/matter-intake",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-update",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/matter-update",
+          "destination": "codex/skills/litigation-legal/matter-update",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/matter-workspace",
+          "destination": "codex/skills/litigation-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "oc-status",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/oc-status",
+          "destination": "codex/skills/litigation-legal/oc-status",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "portfolio-status",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/portfolio-status",
+          "destination": "codex/skills/litigation-legal/portfolio-status",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "privilege-log-review",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/privilege-log-review",
+          "destination": "codex/skills/litigation-legal/privilege-log-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "subpoena-triage",
+          "source": "plugins/vertical-plugins/litigation-legal/skills/subpoena-triage",
+          "destination": "codex/skills/litigation-legal/subpoena-triage",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "privacy-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/privacy-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "documents",
+          "chat",
+          "email",
+          "legal-document-management"
+        ]
+      },
+      "skills": [
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/cold-start-interview",
+          "destination": "codex/skills/privacy-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/customize",
+          "destination": "codex/skills/privacy-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "dpa-review",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/dpa-review",
+          "destination": "codex/skills/privacy-legal/dpa-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "dsar-response",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/dsar-response",
+          "destination": "codex/skills/privacy-legal/dsar-response",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/matter-workspace",
+          "destination": "codex/skills/privacy-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "pia-generation",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/pia-generation",
+          "destination": "codex/skills/privacy-legal/pia-generation",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-monitor",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/policy-monitor",
+          "destination": "codex/skills/privacy-legal/policy-monitor",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "reg-gap-analysis",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/reg-gap-analysis",
+          "destination": "codex/skills/privacy-legal/reg-gap-analysis",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "use-case-triage",
+          "source": "plugins/vertical-plugins/privacy-legal/skills/use-case-triage",
+          "destination": "codex/skills/privacy-legal/use-case-triage",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "product-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/product-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          },
+          "Linear": {
+            "type": "http",
+            "url": "https://mcp.linear.app/mcp",
+            "title": "Linear",
+            "description": "Issue tracking and project management."
+          },
+          "Atlassian": {
+            "type": "http",
+            "url": "https://mcp.atlassian.com/v1/sse",
+            "title": "Atlassian",
+            "description": "Jira issues and Confluence pages."
+          },
+          "Asana": {
+            "type": "http",
+            "url": "https://mcp.asana.com/sse",
+            "title": "Asana",
+            "description": "Tasks and project tracking."
+          }
+        },
+        "recommendedCategories": [
+          "project-management",
+          "issue-tracking",
+          "documents",
+          "chat",
+          "email",
+          "outside-counsel-network"
+        ]
+      },
+      "skills": [
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/product-legal/skills/cold-start-interview",
+          "destination": "codex/skills/product-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/product-legal/skills/customize",
+          "destination": "codex/skills/product-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "feature-risk-assessment",
+          "source": "plugins/vertical-plugins/product-legal/skills/feature-risk-assessment",
+          "destination": "codex/skills/product-legal/feature-risk-assessment",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "is-this-a-problem",
+          "source": "plugins/vertical-plugins/product-legal/skills/is-this-a-problem",
+          "destination": "codex/skills/product-legal/is-this-a-problem",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "launch-review",
+          "source": "plugins/vertical-plugins/product-legal/skills/launch-review",
+          "destination": "codex/skills/product-legal/launch-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "marketing-claims-review",
+          "source": "plugins/vertical-plugins/product-legal/skills/marketing-claims-review",
+          "destination": "codex/skills/product-legal/marketing-claims-review",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/product-legal/skills/matter-workspace",
+          "destination": "codex/skills/product-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "regulatory-legal": {
+      "source_group": "vertical",
+      "source_path": "plugins/vertical-plugins/regulatory-legal",
+      "mcp": {
+        "mcpServers": {
+          "Slack": {
+            "type": "http",
+            "url": "https://mcp.slack.com/mcp",
+            "title": "Slack",
+            "description": "Search messages, read channels, find discussions across your workspace."
+          },
+          "Google Drive": {
+            "type": "http",
+            "url": "https://drivemcp.googleapis.com/mcp/v1",
+            "title": "Google Drive",
+            "description": "Search, read, and fetch documents from Google Drive."
+          }
+        },
+        "recommendedCategories": [
+          "legal-research",
+          "regulatory-intelligence",
+          "documents",
+          "chat",
+          "email"
+        ]
+      },
+      "skills": [
+        {
+          "name": "cold-start-interview",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/cold-start-interview",
+          "destination": "codex/skills/regulatory-legal/cold-start-interview",
+          "findings": [
+            "claude_profile_path",
+            "cowork"
+          ]
+        },
+        {
+          "name": "comments",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/comments",
+          "destination": "codex/skills/regulatory-legal/comments",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "customize",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/customize",
+          "destination": "codex/skills/regulatory-legal/customize",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "gap-surfacer",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/gap-surfacer",
+          "destination": "codex/skills/regulatory-legal/gap-surfacer",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "gaps",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/gaps",
+          "destination": "codex/skills/regulatory-legal/gaps",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "matter-workspace",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/matter-workspace",
+          "destination": "codex/skills/regulatory-legal/matter-workspace",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-diff",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/policy-diff",
+          "destination": "codex/skills/regulatory-legal/policy-diff",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "policy-redraft",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/policy-redraft",
+          "destination": "codex/skills/regulatory-legal/policy-redraft",
+          "findings": [
+            "claude_profile_path"
+          ]
+        },
+        {
+          "name": "reg-feed-watcher",
+          "source": "plugins/vertical-plugins/regulatory-legal/skills/reg-feed-watcher",
+          "destination": "codex/skills/regulatory-legal/reg-feed-watcher",
+          "findings": [
+            "claude_profile_path"
+          ]
+        }
+      ],
+      "commands": []
+    },
+    "cocounsel-legal": {
+      "source_group": "partner",
+      "source_path": "plugins/partner-built/cocounsel-legal",
+      "mcp": {
+        "mcpServers": {
+          "cocounsel-legal": {
+            "type": "http",
+            "url": "https://legal-mcp.thomsonreuters.com/mcp",
+            "oauth": {
+              "clientId": "QCgP4IGN5JiLqXRHxiAVr3wu1ySo2nQx"
+            }
+          }
+        }
+      },
+      "skills": [
+        {
+          "name": "deep-research",
+          "source": "plugins/partner-built/cocounsel-legal/skills/deep-research",
+          "destination": "codex/skills/cocounsel-legal/deep-research",
+          "findings": []
+        }
+      ],
+      "commands": []
+    }
+  },
+  "summary": {
+    "skills": 151,
+    "commands": 0,
+    "items_with_findings": 145
+  }
+}

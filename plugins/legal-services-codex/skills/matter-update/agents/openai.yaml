@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matter Update"
+  short_description: "Append a dated event to a matter's history file and refresh the log row \u2014 captures new developments, status..."
+  default_prompt: "Use $matter-update when you need to append a dated event to a matter's history file and refresh the log row \u2014 captures new developments, status."

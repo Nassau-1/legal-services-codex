@@ -1,0 +1,43 @@
+{
+  "name": "legal-services-codex",
+  "version": "0.1.0",
+  "description": "Installable Codex plugin for the full legal-services corpus: practice-area skills, partner-built skills, and managed-agent task packs.",
+  "author": {
+    "name": "Enzo Terrier",
+    "url": "https://github.com/Nassau-1"
+  },
+  "homepage": "https://github.com/Nassau-1/legal-services-codex",
+  "repository": "https://github.com/Nassau-1/legal-services-codex",
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal",
+    "contracts",
+    "privacy",
+    "litigation",
+    "regulatory",
+    "compliance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Legal Services Codex",
+    "shortDescription": "Full legal-services corpus for Codex",
+    "longDescription": "Legal Services Codex installs the full Codex-adapted legal-services corpus from this repository as a real Codex plugin. It exposes practice-area legal skills, partner-built research skills, and Codex task-pack wrappers for the imported managed-agent workflows.",
+    "developerName": "Enzo Terrier",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/Nassau-1/legal-services-codex",
+    "privacyPolicyURL": "https://github.com/Nassau-1/legal-services-codex",
+    "termsOfServiceURL": "https://github.com/Nassau-1/legal-services-codex",
+    "defaultPrompt": [
+      "Use $dsar-response to draft a first-pass DSAR response.",
+      "Use $commercial-legal-review to route and review an inbound commercial agreement.",
+      "Use $diligence-grid to run a Codex task-pack over a diligence folder."
+    ],
+    "brandColor": "#5A2A1D",
+    "screenshots": []
+  }
+}

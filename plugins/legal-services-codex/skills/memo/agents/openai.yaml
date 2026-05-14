@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memo"
+  short_description: ">"
+  default_prompt: "Use $memo when you need to >."

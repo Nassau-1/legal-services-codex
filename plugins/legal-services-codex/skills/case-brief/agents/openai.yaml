@@ -1,0 +1,4 @@
+interface:
+  display_name: "Case Brief"
+  short_description: ">"
+  default_prompt: "Use $case-brief when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brief Section Drafter"
+  short_description: "Draft a brief section in house style, consistent with the case theory \u2014 every fact cited, every case checke..."
+  default_prompt: "Use $brief-section-drafter when you need to draft a brief section in house style, consistent with the case theory \u2014 every fact cited, every case checke."

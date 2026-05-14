@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vendor AI Review"
+  short_description: ">"
+  default_prompt: "Use $vendor-ai-review when you need to >."

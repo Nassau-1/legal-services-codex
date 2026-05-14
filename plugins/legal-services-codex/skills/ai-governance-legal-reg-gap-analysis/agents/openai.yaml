@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Governance Legal Reg Gap Analysis"
+  short_description: ">"
+  default_prompt: "Use $ai-governance-legal-reg-gap-analysis when you need to >."

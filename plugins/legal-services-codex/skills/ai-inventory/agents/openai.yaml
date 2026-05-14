@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Inventory"
+  short_description: ">"
+  default_prompt: "Use $ai-inventory when you need to >."

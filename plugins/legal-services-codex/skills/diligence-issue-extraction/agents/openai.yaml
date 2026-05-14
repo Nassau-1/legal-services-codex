@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diligence Issue Extraction"
+  short_description: ">"
+  default_prompt: "Use $diligence-issue-extraction when you need to >."

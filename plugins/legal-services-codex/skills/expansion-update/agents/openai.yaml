@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expansion Update"
+  short_description: ">"
+  default_prompt: "Use $expansion-update when you need to >."

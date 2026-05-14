@@ -1,0 +1,4 @@
+interface:
+  display_name: "Registry Browser"
+  short_description: ">"
+  default_prompt: "Use $registry-browser when you need to >."

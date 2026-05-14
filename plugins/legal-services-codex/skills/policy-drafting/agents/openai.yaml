@@ -1,0 +1,4 @@
+interface:
+  display_name: "Policy Drafting"
+  short_description: ">"
+  default_prompt: "Use $policy-drafting when you need to >."

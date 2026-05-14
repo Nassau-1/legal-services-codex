@@ -1,0 +1,4 @@
+interface:
+  display_name: "FTO Triage"
+  short_description: ">"
+  default_prompt: "Use $fto-triage when you need to >."

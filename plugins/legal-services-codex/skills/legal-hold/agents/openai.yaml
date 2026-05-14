@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Hold"
+  short_description: "Issue, refresh, release, or report on legal holds \u2014 drafts the hold notice as .docx, updates legal_hold fie..."
+  default_prompt: "Use $legal-hold when you need to issue, refresh, release, or report on legal holds \u2014 drafts the hold notice as .docx, updates legal_hold fie."

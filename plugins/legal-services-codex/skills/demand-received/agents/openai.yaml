@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demand Received"
+  short_description: "Triage an inbound demand letter \u2014 extract fields, cross-check the portfolio, assess merit, present response..."
+  default_prompt: "Use $demand-received when you need to triage an inbound demand letter \u2014 extract fields, cross-check the portfolio, assess merit, present response."

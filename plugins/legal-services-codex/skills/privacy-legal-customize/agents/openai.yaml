@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy Legal Customize"
+  short_description: ">"
+  default_prompt: "Use $privacy-legal-customize when you need to >."

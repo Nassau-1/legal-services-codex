@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diligence Grid"
+  short_description: "Run cited legal diligence grid workflows"
+  default_prompt: "Use $diligence-grid to review a VDR folder into a cited diligence grid."

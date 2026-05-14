@@ -1,0 +1,4 @@
+interface:
+  display_name: "Renewal Tracker"
+  short_description: ">"
+  default_prompt: "Use $renewal-tracker when you need to >."

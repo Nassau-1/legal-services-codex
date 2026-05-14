@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Guide"
+  short_description: ">"
+  default_prompt: "Use $build-guide when you need to >."

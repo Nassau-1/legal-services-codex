@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Claims Review"
+  short_description: ">"
+  default_prompt: "Use $marketing-claims-review when you need to >."

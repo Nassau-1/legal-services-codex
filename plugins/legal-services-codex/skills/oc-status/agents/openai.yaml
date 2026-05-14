@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oc Status"
+  short_description: "Generate weekly status-request email drafts to outside counsel across the active portfolio \u2014 markdown per m..."
+  default_prompt: "Use $oc-status when you need to generate weekly status-request email drafts to outside counsel across the active portfolio \u2014 markdown per m."

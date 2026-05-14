@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "task_packs": [
+    {
+      "name": "diligence-grid",
+      "entry_skill": "codex/task-packs/diligence-grid/SKILL.md",
+      "source_agent": "managed-agent-cookbooks/diligence-grid/agent.yaml",
+      "workers_ref": "codex/task-packs/diligence-grid/references/workers.md",
+      "artifacts": [
+        "./out/diligence-grid-<deal>.csv",
+        "./out/diligence-grid-<deal>-sources.csv",
+        "./out/diligence-grid-<deal>.md"
+      ],
+      "connectors": [
+        "box",
+        "imanage",
+        "definely",
+        "gdrive"
+      ]
+    },
+    {
+      "name": "docket-watcher",
+      "entry_skill": "codex/task-packs/docket-watcher/SKILL.md",
+      "source_agent": "managed-agent-cookbooks/docket-watcher/agent.yaml",
+      "workers_ref": "codex/task-packs/docket-watcher/references/workers.md",
+      "artifacts": [
+        "./out/docket-report-<date>.md",
+        "./out/deadlines-<date>.yaml"
+      ],
+      "connectors": [
+        "trellis",
+        "courtlistener",
+        "gdrive"
+      ]
+    },
+    {
+      "name": "launch-radar",
+      "entry_skill": "codex/task-packs/launch-radar/SKILL.md",
+      "source_agent": "managed-agent-cookbooks/launch-radar/agent.yaml",
+      "workers_ref": "codex/task-packs/launch-radar/references/workers.md",
+      "artifacts": [
+        "./out/launch-radar-<date>.md"
+      ],
+      "connectors": [
+        "linear",
+        "atlassian",
+        "asana",
+        "gdrive"
+      ]
+    },
+    {
+      "name": "reg-monitor",
+      "entry_skill": "codex/task-packs/reg-monitor/SKILL.md",
+      "source_agent": "managed-agent-cookbooks/reg-monitor/agent.yaml",
+      "workers_ref": "codex/task-packs/reg-monitor/references/workers.md",
+      "artifacts": [
+        "./out/reg-digest-<date>.md",
+        "./out/reg-gap-summary-<date>.md"
+      ],
+      "connectors": [
+        "gdrive"
+      ]
+    },
+    {
+      "name": "renewal-watcher",
+      "entry_skill": "codex/task-packs/renewal-watcher/SKILL.md",
+      "source_agent": "managed-agent-cookbooks/renewal-watcher/agent.yaml",
+      "workers_ref": "codex/task-packs/renewal-watcher/references/workers.md",
+      "artifacts": [
+        "./out/renewal-alert-<date>.md"
+      ],
+      "connectors": [
+        "ironclad",
+        "imanage",
+        "docusign",
+        "gdrive"
+      ]
+    }
+  ]
+}

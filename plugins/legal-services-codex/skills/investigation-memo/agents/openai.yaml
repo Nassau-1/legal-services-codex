@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investigation Memo"
+  short_description: ">"
+  default_prompt: "Use $investigation-memo when you need to >."

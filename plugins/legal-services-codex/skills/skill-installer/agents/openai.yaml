@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Installer"
+  short_description: ">"
+  default_prompt: "Use $skill-installer when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clearance"
+  short_description: ">"
+  default_prompt: "Use $clearance when you need to >."

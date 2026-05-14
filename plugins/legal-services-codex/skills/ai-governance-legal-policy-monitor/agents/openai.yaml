@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Governance Legal Policy Monitor"
+  short_description: ">"
+  default_prompt: "Use $ai-governance-legal-policy-monitor when you need to >."

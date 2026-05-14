@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claim Chart"
+  short_description: "Build or review an element chart \u2014 a patent claim chart (infringement, invalidity, or review) or a civil el..."
+  default_prompt: "Use $claim-chart when you need to build or review an element chart \u2014 a patent claim chart (infringement, invalidity, or review) or a civil el."

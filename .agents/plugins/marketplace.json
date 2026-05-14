@@ -1,0 +1,20 @@
+{
+  "name": "legal-services-codex-local",
+  "interface": {
+    "displayName": "Legal Services Codex Local"
+  },
+  "plugins": [
+    {
+      "name": "legal-services-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/legal-services-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investigation Open"
+  short_description: ">"
+  default_prompt: "Use $investigation-open when you need to >."

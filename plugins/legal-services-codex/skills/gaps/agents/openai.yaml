@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gaps"
+  short_description: "Open gaps tracker \u2014 what's flagged and not yet closed."
+  default_prompt: "Use $gaps when you need to open gaps tracker \u2014 what's flagged and not yet closed."

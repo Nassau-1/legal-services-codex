@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docket Watcher"
+  short_description: "Monitor matters and map candidate deadlines"
+  default_prompt: "Use $docket-watcher to review new filings and stage a docket update memo."

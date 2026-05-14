@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commercial Legal Matter Workspace"
+  short_description: ">"
+  default_prompt: "Use $commercial-legal-matter-workspace when you need to >."

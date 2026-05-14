@@ -1,0 +1,4 @@
+interface:
+  display_name: "Policy Redraft"
+  short_description: "Produce a proposed marked-up policy redraft that closes a gap found by /regulatory-legal:gaps or /regulator..."
+  default_prompt: "Use $policy-redraft when you need to produce a proposed marked-up policy redraft that closes a gap found by /regulatory-legal:gaps or /regulator."

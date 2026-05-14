@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bar Prep Questions"
+  short_description: ">"
+  default_prompt: "Use $bar-prep-questions when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deadlines"
+  short_description: ">"
+  default_prompt: "Use $deadlines when you need to >."

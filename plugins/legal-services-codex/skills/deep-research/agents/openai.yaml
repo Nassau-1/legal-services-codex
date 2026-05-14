@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: ">"
+  default_prompt: "Use $deep-research when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handbook Updates"
+  short_description: ">"
+  default_prompt: "Use $handbook-updates when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Entity Compliance"
+  short_description: ">"
+  default_prompt: "Use $entity-compliance when you need to >."

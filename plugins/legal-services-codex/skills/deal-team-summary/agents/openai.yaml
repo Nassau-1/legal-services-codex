@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deal Team Summary"
+  short_description: ">"
+  default_prompt: "Use $deal-team-summary when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Writing"
+  short_description: ">"
+  default_prompt: "Use $legal-writing when you need to >."

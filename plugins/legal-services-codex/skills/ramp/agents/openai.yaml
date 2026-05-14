@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ramp"
+  short_description: ">"
+  default_prompt: "Use $ramp when you need to >."

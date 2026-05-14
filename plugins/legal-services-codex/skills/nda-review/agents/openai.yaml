@@ -1,0 +1,4 @@
+interface:
+  display_name: "NDA Review"
+  short_description: ">"
+  default_prompt: "Use $nda-review when you need to >."

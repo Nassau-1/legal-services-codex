@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy Legal Reg Gap Analysis"
+  short_description: ">"
+  default_prompt: "Use $privacy-legal-reg-gap-analysis when you need to >."

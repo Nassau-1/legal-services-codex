@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stakeholder Summary"
+  short_description: ">"
+  default_prompt: "Use $stakeholder-summary when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Intake"
+  short_description: ">"
+  default_prompt: "Use $client-intake when you need to >."

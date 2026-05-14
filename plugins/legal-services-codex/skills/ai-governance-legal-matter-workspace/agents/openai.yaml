@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Governance Legal Matter Workspace"
+  short_description: ">"
+  default_prompt: "Use $ai-governance-legal-matter-workspace when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Start"
+  short_description: ">"
+  default_prompt: "Use $research-start when you need to >."

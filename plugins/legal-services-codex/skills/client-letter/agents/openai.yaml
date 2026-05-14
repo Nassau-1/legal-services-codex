@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Letter"
+  short_description: ">"
+  default_prompt: "Use $client-letter when you need to >."

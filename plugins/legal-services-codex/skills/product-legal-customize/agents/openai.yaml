@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Legal Customize"
+  short_description: ">"
+  default_prompt: "Use $product-legal-customize when you need to >."

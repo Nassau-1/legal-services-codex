@@ -1,0 +1,4 @@
+interface:
+  display_name: "Renewal Watcher"
+  short_description: "Screen contract renewals and notice deadlines"
+  default_prompt: "Use $renewal-watcher to scan the contract register for upcoming cancel-by dates."

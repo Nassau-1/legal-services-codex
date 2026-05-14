@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matter Intake"
+  short_description: "Intake a new matter \u2014 uniform questions covering identification, conflicts, source, risk triage, materialit..."
+  default_prompt: "Use $matter-intake when you need to intake a new matter \u2014 uniform questions covering identification, conflicts, source, risk triage, materialit."

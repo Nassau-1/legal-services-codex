@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demand Draft"
+  short_description: "Draft a demand letter from a completed intake, gated on a privilege / FRE 408 / waiver / admission checklis..."
+  default_prompt: "Use $demand-draft when you need to draft a demand letter from a completed intake, gated on a privilege / FRE 408 / waiver / admission checklis."

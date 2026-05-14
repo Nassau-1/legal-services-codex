@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matter Briefing"
+  short_description: "Deep briefing on one matter \u2014 current posture, what's changed, next deadline, open questions, and a risk re..."
+  default_prompt: "Use $matter-briefing when you need to deep briefing on one matter \u2014 current posture, what's changed, next deadline, open questions, and a risk re."

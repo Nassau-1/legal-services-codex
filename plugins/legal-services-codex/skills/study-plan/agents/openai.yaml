@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study Plan"
+  short_description: ">"
+  default_prompt: "Use $study-plan when you need to >."

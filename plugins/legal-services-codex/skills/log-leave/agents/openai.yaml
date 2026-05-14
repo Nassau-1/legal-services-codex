@@ -1,0 +1,4 @@
+interface:
+  display_name: "Log Leave"
+  short_description: ">"
+  default_prompt: "Use $log-leave when you need to >."

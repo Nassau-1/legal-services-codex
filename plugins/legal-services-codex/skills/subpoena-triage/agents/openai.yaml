@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subpoena Triage"
+  short_description: "Triage a subpoena served on the company \u2014 classify it, analyze scope/burden/privilege, cross-check the port..."
+  default_prompt: "Use $subpoena-triage when you need to triage a subpoena served on the company \u2014 classify it, analyze scope/burden/privilege, cross-check the port."

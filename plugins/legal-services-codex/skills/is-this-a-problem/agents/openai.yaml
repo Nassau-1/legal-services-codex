@@ -1,0 +1,4 @@
+interface:
+  display_name: "Is This A Problem"
+  short_description: ">"
+  default_prompt: "Use $is-this-a-problem when you need to >."

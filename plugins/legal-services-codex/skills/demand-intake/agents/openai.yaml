@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demand Intake"
+  short_description: "Pre-drafting context gathering for a demand letter \u2014 parties, facts, basis, leverage, BATNA, and privilege..."
+  default_prompt: "Use $demand-intake when you need to pre-drafting context gathering for a demand letter \u2014 parties, facts, basis, leverage, BATNA, and privilege."

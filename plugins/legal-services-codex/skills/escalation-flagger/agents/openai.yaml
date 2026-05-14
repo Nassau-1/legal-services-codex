@@ -1,0 +1,4 @@
+interface:
+  display_name: "Escalation Flagger"
+  short_description: ">"
+  default_prompt: "Use $escalation-flagger when you need to >."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Employment Legal Matter Workspace"
+  short_description: ">"
+  default_prompt: "Use $employment-legal-matter-workspace when you need to >."

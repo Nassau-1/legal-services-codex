@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cease Desist"
+  short_description: ">"
+  default_prompt: "Use $cease-desist when you need to >."

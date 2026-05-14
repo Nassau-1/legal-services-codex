@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commercial Legal Customize"
+  short_description: ">"
+  default_prompt: "Use $commercial-legal-customize when you need to >."

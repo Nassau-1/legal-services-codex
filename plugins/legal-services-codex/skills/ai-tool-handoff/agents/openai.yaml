@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Tool Handoff"
+  short_description: ">"
+  default_prompt: "Use $ai-tool-handoff when you need to >."

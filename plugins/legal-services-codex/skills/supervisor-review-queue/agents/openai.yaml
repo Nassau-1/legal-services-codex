@@ -1,0 +1,4 @@
+interface:
+  display_name: "Supervisor Review Queue"
+  short_description: ">"
+  default_prompt: "Use $supervisor-review-queue when you need to >."

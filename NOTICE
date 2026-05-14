@@ -1,0 +1,11 @@
+This repository contains derivative work based on Anthropic's `claude-for-legal`
+repository, licensed under Apache License 2.0.
+
+The preserved upstream content is retained for provenance under:
+
+- `plugins/vertical-plugins/`
+- `plugins/partner-built/`
+- `managed-agent-cookbooks/`
+
+Repository-level Codex porting changes, generated export tooling, task-pack
+workflow layers, and installable plugin packaging were added in this repository.

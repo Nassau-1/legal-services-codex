@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integration Management"
+  short_description: ">"
+  default_prompt: "Use $integration-management when you need to >."
