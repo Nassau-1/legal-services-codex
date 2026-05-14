@@ -1,4 +1,4 @@
 interface:
   display_name: "Clearance"
-  short_description: ">"
-  default_prompt: "Use $clearance when you need to >."
+  short_description: "Trademark clearance first pass \u2014 knockout + similar-marks check producing a flag list, not a clearance opin..."
+  default_prompt: "Use $clearance when you need to trademark clearance first pass \u2014 knockout + similar-marks check producing a flag list, not a clearance opin."

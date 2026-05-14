@@ -1,4 +1,4 @@
 interface:
   display_name: "AI Tool Handoff"
-  short_description: ">"
-  default_prompt: "Use $ai-tool-handoff when you need to >."
+  short_description: "Detects when Luminance, Kira, or a similar bulk-review tool is in use, hands off the high-volume clause ext..."
+  default_prompt: "Use $ai-tool-handoff when you need to detects when Luminance, Kira, or a similar bulk-review tool is in use, hands off the high-volume clause ext."

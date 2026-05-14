@@ -1,4 +1,4 @@
 interface:
   display_name: "Closing Checklist"
-  short_description: ">"
-  default_prompt: "Use $closing-checklist when you need to >."
+  short_description: "What's blocking close \u2014 maintain the closing checklist with status, critical path, and days to close."
+  default_prompt: "Use $closing-checklist when you need to what's blocking close \u2014 maintain the closing checklist with status, critical path, and days to close."

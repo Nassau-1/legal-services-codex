@@ -1,4 +1,4 @@
 interface:
   display_name: "Investigation Memo"
-  short_description: ">"
-  default_prompt: "Use $investigation-memo when you need to >."
+  short_description: "Draft or update the privileged investigation memo from the investigation log."
+  default_prompt: "Use $investigation-memo when you need to draft or update the privileged investigation memo from the investigation log."

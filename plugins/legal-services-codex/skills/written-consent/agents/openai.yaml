@@ -1,4 +1,4 @@
 interface:
   display_name: "Written Consent"
-  short_description: ">"
-  default_prompt: "Use $written-consent when you need to >."
+  short_description: "Draft a unanimous written consent of the board or a committee in house format, with precedent search from t..."
+  default_prompt: "Use $written-consent when you need to draft a unanimous written consent of the board or a committee in house format, with precedent search from t."

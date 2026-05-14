@@ -1,4 +1,4 @@
 interface:
   display_name: "Saas MSA Review"
-  short_description: ">"
-  default_prompt: "Use $saas-msa-review when you need to >."
+  short_description: "review of SaaS subscription agreements with attention to the terms that matter most in subscription deals \u2014..."
+  default_prompt: "Use $saas-msa-review when you need to review of SaaS subscription agreements with attention to the terms that matter most in subscription deals \u2014."

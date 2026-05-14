@@ -1,4 +1,4 @@
 interface:
   display_name: "Form Generation"
-  short_description: ">"
-  default_prompt: "Use $form-generation when you need to >."
+  short_description: "DEPRECATED \u2014 use `/draft` instead."
+  default_prompt: "Use $form-generation when you need to dEPRECATED \u2014 use `/draft` instead."

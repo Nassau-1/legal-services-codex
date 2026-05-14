@@ -1,4 +1,4 @@
 interface:
   display_name: "Client Intake"
-  short_description: ">"
-  default_prompt: "Use $client-intake when you need to >."
+  short_description: "Structured intake \u2014 practice-area templates, cross-area issue spotting, conflict flags, and triage classifi..."
+  default_prompt: "Use $client-intake when you need to structured intake \u2014 practice-area templates, cross-area issue spotting, conflict flags, and triage classifi."

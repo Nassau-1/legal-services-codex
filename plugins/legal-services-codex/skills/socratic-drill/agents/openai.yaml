@@ -1,4 +1,4 @@
 interface:
   display_name: "Socratic Drill"
-  short_description: ">"
-  default_prompt: "Use $socratic-drill when you need to >."
+  short_description: "Socratic drilling \u2014 it asks, you answer, it pushes back."
+  default_prompt: "Use $socratic-drill when you need to socratic drilling \u2014 it asks, you answer, it pushes back."

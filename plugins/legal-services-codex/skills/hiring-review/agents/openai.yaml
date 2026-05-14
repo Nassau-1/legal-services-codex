@@ -1,4 +1,4 @@
 interface:
   display_name: "Hiring Review"
-  short_description: ">"
-  default_prompt: "Use $hiring-review when you need to >."
+  short_description: "Review an offer letter and any restrictive covenants \u2014 jurisdiction check included."
+  default_prompt: "Use $hiring-review when you need to review an offer letter and any restrictive covenants \u2014 jurisdiction check included."

@@ -8,6 +8,8 @@ import re
 import shutil
 from pathlib import Path
 
+import yaml
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PLUGIN_ROOT = ROOT / "plugins" / "legal-services-codex"
@@ -149,12 +151,8 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
     match = re.search(r"(?ms)^---\r?\n(.*?)\r?\n---\r?\n?", text)
     if not match:
         return {}, text
-    meta: dict[str, str] = {}
-    for line in match.group(1).splitlines():
-        if ":" not in line:
-            continue
-        key, value = line.split(":", 1)
-        meta[key.strip()] = value.strip().strip("\"'")
+    loaded = yaml.safe_load(match.group(1)) or {}
+    meta = {str(key): str(value).strip() for key, value in loaded.items()}
     return meta, text[match.end() :]
 
 
@@ -180,6 +178,12 @@ def first_sentence(text: str) -> str:
     return match.group(1) if match else cleaned
 
 
+def normalize_description_text(text: str) -> str:
+    cleaned = " ".join(text.split())
+    cleaned = re.sub(r"^Reference:\s*", "", cleaned, flags=re.IGNORECASE)
+    return cleaned.strip()
+
+
 def shorten(text: str, limit: int = 120) -> str:
     compact = " ".join(text.split())
     if len(compact) <= limit:
@@ -198,7 +202,7 @@ def build_ui(skill_name: str, source_text: str, explicit: dict[str, str] | None 
         return explicit
 
     meta, _ = parse_frontmatter(source_text)
-    description = meta.get("description", "").strip()
+    description = normalize_description_text(meta.get("description", ""))
     display_name = slug_to_title(skill_name)
     short_description = shorten(first_sentence(description) or display_name, 110)
     default_prompt = f"Use ${skill_name} when you need to {lower_first(short_description.rstrip('.'))}."

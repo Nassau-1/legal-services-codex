@@ -1,4 +1,4 @@
 interface:
   display_name: "Build Guide"
-  short_description: ">"
-  default_prompt: "Use $build-guide when you need to >."
+  short_description: "Help a clinic supervisor author a practice-area guide that configures how student-facing skills behave \u2014 in..."
+  default_prompt: "Use $build-guide when you need to help a clinic supervisor author a practice-area guide that configures how student-facing skills behave \u2014 in."

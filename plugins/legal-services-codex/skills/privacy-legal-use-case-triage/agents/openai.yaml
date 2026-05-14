@@ -1,4 +1,4 @@
 interface:
   display_name: "Privacy Legal Use Case Triage"
-  short_description: ">"
-  default_prompt: "Use $privacy-legal-use-case-triage when you need to >."
+  short_description: "Quickly determine whether a processing activity needs a PIA, a mandatory GDPR DPIA, or can proceed \u2014 surfac..."
+  default_prompt: "Use $privacy-legal-use-case-triage when you need to quickly determine whether a processing activity needs a PIA, a mandatory GDPR DPIA, or can proceed \u2014 surfac."

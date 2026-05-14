@@ -1,4 +1,4 @@
 interface:
   display_name: "Policy Drafting"
-  short_description: ">"
-  default_prompt: "Use $policy-drafting when you need to >."
+  short_description: "Draft an employment policy with state supplements where law differs across the jurisdictional footprint."
+  default_prompt: "Use $policy-drafting when you need to draft an employment policy with state supplements where law differs across the jurisdictional footprint."

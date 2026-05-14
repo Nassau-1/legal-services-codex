@@ -1,4 +1,4 @@
 interface:
   display_name: "Cease Desist"
-  short_description: ">"
-  default_prompt: "Use $cease-desist when you need to >."
+  short_description: "Draft a cease-and-desist letter (send mode) or triage one you received (receive mode)."
+  default_prompt: "Use $cease-desist when you need to draft a cease-and-desist letter (send mode) or triage one you received (receive mode)."

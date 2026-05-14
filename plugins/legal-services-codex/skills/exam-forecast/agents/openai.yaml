@@ -1,4 +1,4 @@
 interface:
   display_name: "Exam Forecast"
-  short_description: ">"
-  default_prompt: "Use $exam-forecast when you need to >."
+  short_description: "Analyze past exams from the same professor to surface patterns \u2014 subject weighting, recurring issue-spot tr..."
+  default_prompt: "Use $exam-forecast when you need to analyze past exams from the same professor to surface patterns \u2014 subject weighting, recurring issue-spot tr."

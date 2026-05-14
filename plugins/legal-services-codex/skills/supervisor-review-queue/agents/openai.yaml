@@ -1,4 +1,4 @@
 interface:
   display_name: "Supervisor Review Queue"
-  short_description: ">"
-  default_prompt: "Use $supervisor-review-queue when you need to >."
+  short_description: "Professor's review queue \u2014 student output waits here for professor approval before going to clients or courts."
+  default_prompt: "Use $supervisor-review-queue when you need to professor's review queue \u2014 student output waits here for professor approval before going to clients or courts."

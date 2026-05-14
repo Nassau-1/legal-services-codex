@@ -1,4 +1,4 @@
 interface:
   display_name: "Renewal Tracker"
-  short_description: ">"
-  default_prompt: "Use $renewal-tracker when you need to >."
+  short_description: "Show contracts with cancel-by deadlines coming up and warn before notice windows close, working from a main..."
+  default_prompt: "Use $renewal-tracker when you need to show contracts with cancel-by deadlines coming up and warn before notice windows close, working from a main."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Cold Call Prep"
-  short_description: ">"
-  default_prompt: "Use $cold-call-prep when you need to >."
+  short_description: "Prep for a cold-call \u2014 predict the professor's likely questions and drill them Socratically, flagging where..."
+  default_prompt: "Use $cold-call-prep when you need to prep for a cold-call \u2014 predict the professor's likely questions and drill them Socratically, flagging where."

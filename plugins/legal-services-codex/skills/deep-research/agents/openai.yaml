@@ -1,4 +1,4 @@
 interface:
   display_name: "Deep Research"
-  short_description: ">"
-  default_prompt: "Use $deep-research when you need to >."
+  short_description: "Use this skill whenever a user specifically requests legal research or Westlaw Deep Research, asks for CoCo..."
+  default_prompt: "Use $deep-research when you need to use this skill whenever a user specifically requests legal research or Westlaw Deep Research, asks for CoCo."

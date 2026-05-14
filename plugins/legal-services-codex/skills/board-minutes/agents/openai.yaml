@@ -1,4 +1,4 @@
 interface:
   display_name: "Board Minutes"
-  short_description: ">"
-  default_prompt: "Use $board-minutes when you need to >."
+  short_description: "Drafts board or committee meeting minutes in your house format."
+  default_prompt: "Use $board-minutes when you need to drafts board or committee meeting minutes in your house format."

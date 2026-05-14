@@ -1,4 +1,4 @@
 interface:
   display_name: "Worker Classification"
-  short_description: ">"
-  default_prompt: "Use $worker-classification when you need to >."
+  short_description: "Classify a proposed worker engagement \u2014 employee, IC, temp, or vendor \u2014 by running the applicable jurisdict..."
+  default_prompt: "Use $worker-classification when you need to classify a proposed worker engagement \u2014 employee, IC, temp, or vendor \u2014 by running the applicable jurisdict."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Client Comms Log"
-  short_description: ">"
-  default_prompt: "Use $client-comms-log when you need to >."
+  short_description: "Log a client communication \u2014 call, email, text, letter, in-person, voicemail."
+  default_prompt: "Use $client-comms-log when you need to log a client communication \u2014 call, email, text, letter, in-person, voicemail."

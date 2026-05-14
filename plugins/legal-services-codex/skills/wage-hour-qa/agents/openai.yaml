@@ -1,4 +1,4 @@
 interface:
   display_name: "Wage Hour Q&A"
-  short_description: ">"
-  default_prompt: "Use $wage-hour-qa when you need to >."
+  short_description: "Jurisdiction-aware wage/hour and employment Q&A \u2014 classification, overtime, meal/rest breaks, leave, final..."
+  default_prompt: "Use $wage-hour-qa when you need to jurisdiction-aware wage/hour and employment Q&A \u2014 classification, overtime, meal/rest breaks, leave, final."

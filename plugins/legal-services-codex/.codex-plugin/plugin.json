@@ -1,6 +1,6 @@
 {
   "name": "legal-services-codex",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Installable Codex plugin for the full legal-services corpus: practice-area skills, partner-built skills, and managed-agent task packs.",
   "author": {
     "name": "Enzo Terrier",

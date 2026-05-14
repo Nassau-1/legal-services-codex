@@ -1,4 +1,4 @@
 interface:
   display_name: "Policy Starter"
-  short_description: ">"
-  default_prompt: "Use $policy-starter when you need to >."
+  short_description: "Draft a firm AI usage policy from published model policies, adapted to your practice profile \u2014 a research-a..."
+  default_prompt: "Use $policy-starter when you need to draft a firm AI usage policy from published model policies, adapted to your practice profile \u2014 a research-a."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Deal Team Summary"
-  short_description: ">"
-  default_prompt: "Use $deal-team-summary when you need to >."
+  short_description: "Aggregate diligence findings into a deal team briefing at the right altitude for the audience \u2014 exec summar..."
+  default_prompt: "Use $deal-team-summary when you need to aggregate diligence findings into a deal team briefing at the right altitude for the audience \u2014 exec summar."

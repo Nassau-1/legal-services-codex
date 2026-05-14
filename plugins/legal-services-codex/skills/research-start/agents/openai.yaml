@@ -1,4 +1,4 @@
 interface:
   display_name: "Research Start"
-  short_description: ">"
-  default_prompt: "Use $research-start when you need to >."
+  short_description: "Research roadmap for a legal issue \u2014 statutes to check, case law areas to investigate, regulatory framework..."
+  default_prompt: "Use $research-start when you need to research roadmap for a legal issue \u2014 statutes to check, case law areas to investigate, regulatory framework."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Marketing Claims Review"
-  short_description: ">"
-  default_prompt: "Use $marketing-claims-review when you need to >."
+  short_description: "Review marketing copy for claims that need substantiation, reframing, or cutting."
+  default_prompt: "Use $marketing-claims-review when you need to review marketing copy for claims that need substantiation, reframing, or cutting."

@@ -1,4 +1,4 @@
 interface:
   display_name: "FTO Triage"
-  short_description: ">"
-  default_prompt: "Use $fto-triage when you need to >."
+  short_description: "Freedom-to-operate triage \u2014 a structured first look at potentially blocking patents, not an FTO opinion."
+  default_prompt: "Use $fto-triage when you need to freedom-to-operate triage \u2014 a structured first look at potentially blocking patents, not an FTO opinion."

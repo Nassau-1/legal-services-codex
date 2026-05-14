@@ -1,4 +1,4 @@
 interface:
   display_name: "OSS Review"
-  short_description: ">"
-  default_prompt: "Use $oss-review when you need to >."
+  short_description: "Open source license compliance check for a dependency list, a single library, or outbound code."
+  default_prompt: "Use $oss-review when you need to open source license compliance check for a dependency list, a single library, or outbound code."

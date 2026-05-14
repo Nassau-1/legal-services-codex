@@ -1,4 +1,4 @@
 interface:
   display_name: "Investigation Open"
-  short_description: ">"
-  default_prompt: "Use $investigation-open when you need to >."
+  short_description: "Open a new internal investigation matter \u2014 runs intake, generates the sources checklist, and creates the pe..."
+  default_prompt: "Use $investigation-open when you need to open a new internal investigation matter \u2014 runs intake, generates the sources checklist, and creates the pe."

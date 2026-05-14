@@ -1,4 +1,4 @@
 interface:
   display_name: "Investigation Query"
-  short_description: ">"
-  default_prompt: "Use $investigation-query when you need to >."
+  short_description: "Ask questions against an open investigation log \u2014 what witnesses said, where accounts conflict, what gaps e..."
+  default_prompt: "Use $investigation-query when you need to ask questions against an open investigation log \u2014 what witnesses said, where accounts conflict, what gaps e."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Entity Compliance"
-  short_description: ">"
-  default_prompt: "Use $entity-compliance when you need to >."
+  short_description: "Entity compliance tracker \u2014 initialize, report upcoming deadlines, update status, run health audit, export..."
+  default_prompt: "Use $entity-compliance when you need to entity compliance tracker \u2014 initialize, report upcoming deadlines, update status, run health audit, export."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Irac Practice"
-  short_description: ">"
-  default_prompt: "Use $irac-practice when you need to >."
+  short_description: "Grade an IRAC essay for structure, issue-spotting, rule accuracy, analysis depth, and organization."
+  default_prompt: "Use $irac-practice when you need to grade an IRAC essay for structure, issue-spotting, rule accuracy, analysis depth, and organization."

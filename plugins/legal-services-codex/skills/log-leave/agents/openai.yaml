@@ -1,4 +1,4 @@
 interface:
   display_name: "Log Leave"
-  short_description: ">"
-  default_prompt: "Use $log-leave when you need to >."
+  short_description: "Add a new leave to the leave register with the minimum information needed to start tracking deadlines."
+  default_prompt: "Use $log-leave when you need to add a new leave to the leave register with the minimum information needed to start tracking deadlines."

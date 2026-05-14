@@ -1,4 +1,4 @@
 interface:
   display_name: "Handbook Updates"
-  short_description: ">"
-  default_prompt: "Use $handbook-updates when you need to >."
+  short_description: "Diff a proposed handbook change against the current version, flag ripple effects and state supplement impacts."
+  default_prompt: "Use $handbook-updates when you need to diff a proposed handbook change against the current version, flag ripple effects and state supplement impacts."

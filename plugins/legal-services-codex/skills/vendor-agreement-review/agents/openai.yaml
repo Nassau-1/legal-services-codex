@@ -1,4 +1,4 @@
 interface:
   display_name: "Vendor Agreement Review"
-  short_description: ">"
-  default_prompt: "Use $vendor-agreement-review when you need to >."
+  short_description: "review of an inbound vendor agreement against the team playbook in `the installed practice profile for comm..."
+  default_prompt: "Use $vendor-agreement-review when you need to review of an inbound vendor agreement against the team playbook in `the installed practice profile for comm."

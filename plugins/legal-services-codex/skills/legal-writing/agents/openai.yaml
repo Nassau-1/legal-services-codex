@@ -1,4 +1,4 @@
 interface:
   display_name: "Legal Writing"
-  short_description: ">"
-  default_prompt: "Use $legal-writing when you need to >."
+  short_description: "Structural feedback on a legal writing draft (memo, brief, paper, exam essay) \u2014 organization, analysis dept..."
+  default_prompt: "Use $legal-writing when you need to structural feedback on a legal writing draft (memo, brief, paper, exam essay) \u2014 organization, analysis dept."

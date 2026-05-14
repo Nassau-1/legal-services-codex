@@ -1,4 +1,4 @@
 interface:
   display_name: "Privacy Legal Reg Gap Analysis"
-  short_description: ">"
-  default_prompt: "Use $privacy-legal-reg-gap-analysis when you need to >."
+  short_description: "Diff a new or changed regulation against current privacy policy and practice \u2014 outputs a gap list and a rem..."
+  default_prompt: "Use $privacy-legal-reg-gap-analysis when you need to diff a new or changed regulation against current privacy policy and practice \u2014 outputs a gap list and a rem."

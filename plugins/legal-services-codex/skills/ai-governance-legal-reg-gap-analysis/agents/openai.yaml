@@ -1,4 +1,4 @@
 interface:
   display_name: "AI Governance Legal Reg Gap Analysis"
-  short_description: ">"
-  default_prompt: "Use $ai-governance-legal-reg-gap-analysis when you need to >."
+  short_description: "Diff a new AI regulation or guidance against your current governance posture \u2014 surfaces gaps, priorities, a..."
+  default_prompt: "Use $ai-governance-legal-reg-gap-analysis when you need to diff a new AI regulation or guidance against your current governance posture \u2014 surfaces gaps, priorities, a."

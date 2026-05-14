@@ -1,4 +1,4 @@
 interface:
   display_name: "Invention Intake"
-  short_description: ">"
-  default_prompt: "Use $invention-intake when you need to >."
+  short_description: "Invention disclosure first-pass screen \u2014 novelty, obviousness, \u00a7101 eligibility, bar dates, detectability,..."
+  default_prompt: "Use $invention-intake when you need to invention disclosure first-pass screen \u2014 novelty, obviousness, \u00a7101 eligibility, bar dates, detectability,."

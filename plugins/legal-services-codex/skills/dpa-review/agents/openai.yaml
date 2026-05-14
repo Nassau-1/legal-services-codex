@@ -1,4 +1,4 @@
 interface:
   display_name: "DPA Review"
-  short_description: ">"
-  default_prompt: "Use $dpa-review when you need to >."
+  short_description: "Review a Data Processing Agreement against your DPA playbook \u2014 auto-detects whether you're processor or con..."
+  default_prompt: "Use $dpa-review when you need to review a Data Processing Agreement against your DPA playbook \u2014 auto-detects whether you're processor or con."

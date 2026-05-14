@@ -1,4 +1,4 @@
 interface:
   display_name: "Diligence Issue Extraction"
-  short_description: ">"
-  default_prompt: "Use $diligence-issue-extraction when you need to >."
+  short_description: "Read VDR documents and extract issues per house categories and materiality thresholds, producing findings i..."
+  default_prompt: "Use $diligence-issue-extraction when you need to read VDR documents and extract issues per house categories and materiality thresholds, producing findings i."

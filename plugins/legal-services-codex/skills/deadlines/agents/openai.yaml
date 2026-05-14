@@ -1,4 +1,4 @@
 interface:
   display_name: "Deadlines"
-  short_description: ">"
-  default_prompt: "Use $deadlines when you need to >."
+  short_description: "Track case deadlines \u2014 add, cross-case rollup report, update, complete, close."
+  default_prompt: "Use $deadlines when you need to track case deadlines \u2014 add, cross-case rollup report, update, complete, close."

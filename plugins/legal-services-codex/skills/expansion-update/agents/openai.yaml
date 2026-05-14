@@ -1,4 +1,4 @@
 interface:
   display_name: "Expansion Update"
-  short_description: ">"
-  default_prompt: "Use $expansion-update when you need to >."
+  short_description: "Update the status of an in-progress international expansion project \u2014 recalculates what is now unblocked, f..."
+  default_prompt: "Use $expansion-update when you need to update the status of an in-progress international expansion project \u2014 recalculates what is now unblocked, f."

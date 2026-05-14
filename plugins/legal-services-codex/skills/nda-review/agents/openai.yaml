@@ -1,4 +1,4 @@
 interface:
   display_name: "NDA Review"
-  short_description: ">"
-  default_prompt: "Use $nda-review when you need to >."
+  short_description: "fast triage of inbound NDAs into GREEN / YELLOW / RED so the team only spends lawyer time on the ones that..."
+  default_prompt: "Use $nda-review when you need to fast triage of inbound NDAs into GREEN / YELLOW / RED so the team only spends lawyer time on the ones that."

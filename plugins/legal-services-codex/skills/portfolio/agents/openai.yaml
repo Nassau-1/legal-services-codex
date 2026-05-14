@@ -1,4 +1,4 @@
 interface:
   display_name: "Portfolio"
-  short_description: ">"
-  default_prompt: "Use $portfolio when you need to >."
+  short_description: "Track the IP portfolio \u2014 registrations, renewals, maintenance fees, and use declarations."
+  default_prompt: "Use $portfolio when you need to track the IP portfolio \u2014 registrations, renewals, maintenance fees, and use declarations."

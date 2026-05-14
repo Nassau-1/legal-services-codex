@@ -1,4 +1,4 @@
 interface:
   display_name: "Flashcards"
-  short_description: ">"
-  default_prompt: "Use $flashcards when you need to >."
+  short_description: "Generate or drill flashcards for black-letter memorization \u2014 Leitner-style buckets, per-subject markdown st..."
+  default_prompt: "Use $flashcards when you need to generate or drill flashcards for black-letter memorization \u2014 Leitner-style buckets, per-subject markdown st."

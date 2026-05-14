@@ -1,4 +1,4 @@
 interface:
   display_name: "Amendment History"
-  short_description: ">"
-  default_prompt: "Use $amendment-history when you need to >."
+  short_description: "Trace how a contract has changed across its base agreement and all amendments \u2014 either a summary of all cha..."
+  default_prompt: "Use $amendment-history when you need to trace how a contract has changed across its base agreement and all amendments \u2014 either a summary of all cha."

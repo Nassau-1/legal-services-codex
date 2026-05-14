@@ -1,4 +1,4 @@
 interface:
   display_name: "Termination Review"
-  short_description: ">"
-  default_prompt: "Use $termination-review when you need to >."
+  short_description: "Termination review \u2014 high-risk flag detection, severance + release, and final pay timing by jurisdiction."
+  default_prompt: "Use $termination-review when you need to termination review \u2014 high-risk flag detection, severance + release, and final pay timing by jurisdiction."

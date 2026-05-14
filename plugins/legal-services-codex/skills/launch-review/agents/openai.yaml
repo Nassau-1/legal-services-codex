@@ -1,4 +1,4 @@
 interface:
   display_name: "Launch Review"
-  short_description: ">"
-  default_prompt: "Use $launch-review when you need to >."
+  short_description: "Full launch review against your framework and risk calibration."
+  default_prompt: "Use $launch-review when you need to full launch review against your framework and risk calibration."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Ramp"
-  short_description: ">"
-  default_prompt: "Use $ramp when you need to >."
+  short_description: "Student semester onboarding \u2014 clinic procedures, tool walkthrough, practice exercises before real cases."
+  default_prompt: "Use $ramp when you need to student semester onboarding \u2014 clinic procedures, tool walkthrough, practice exercises before real cases."

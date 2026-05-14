@@ -1,4 +1,4 @@
 interface:
   display_name: "Plain Language Letters"
-  short_description: ">"
-  default_prompt: "Use $plain-language-letters when you need to >."
+  short_description: "DEPRECATED \u2014 use `/client-letter` for routine correspondence or `/status client` for substantive updates."
+  default_prompt: "Use $plain-language-letters when you need to dEPRECATED \u2014 use `/client-letter` for routine correspondence or `/status client` for substantive updates."

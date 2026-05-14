@@ -1,4 +1,4 @@
 interface:
   display_name: "Is This A Problem"
-  short_description: ">"
-  default_prompt: "Use $is-this-a-problem when you need to >."
+  short_description: "Fast \"is this a problem?\" answer for the quick Slack question \u2014 pattern-matches against your calibration."
+  default_prompt: "Use $is-this-a-problem when you need to fast \"is this a problem?\" answer for the quick Slack question \u2014 pattern-matches against your calibration."

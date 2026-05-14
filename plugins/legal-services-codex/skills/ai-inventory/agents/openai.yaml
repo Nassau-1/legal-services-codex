@@ -1,4 +1,4 @@
 interface:
   display_name: "AI Inventory"
-  short_description: ">"
-  default_prompt: "Use $ai-inventory when you need to >."
+  short_description: "EU AI Act per-system inventory \u2014 track each AI system's role (provider, deployer, importer, distributor, au..."
+  default_prompt: "Use $ai-inventory when you need to eU AI Act per-system inventory \u2014 track each AI system's role (provider, deployer, importer, distributor, au."

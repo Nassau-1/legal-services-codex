@@ -1,4 +1,4 @@
 interface:
   display_name: "Escalation Flagger"
-  short_description: ">"
-  default_prompt: "Use $escalation-flagger when you need to >."
+  short_description: "Route a contract issue to the right approver per the escalation matrix in `the installed practice profile f..."
+  default_prompt: "Use $escalation-flagger when you need to route a contract issue to the right approver per the escalation matrix in `the installed practice profile f."

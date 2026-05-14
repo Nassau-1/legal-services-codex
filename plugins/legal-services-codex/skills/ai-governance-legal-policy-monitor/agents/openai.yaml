@@ -1,4 +1,4 @@
 interface:
   display_name: "AI Governance Legal Policy Monitor"
-  short_description: ">"
-  default_prompt: "Use $ai-governance-legal-policy-monitor when you need to >."
+  short_description: "Keep the AI policy current with practice \u2014 weekly sweep of saved AIAs, triage results, and vendor reviews t..."
+  default_prompt: "Use $ai-governance-legal-policy-monitor when you need to keep the AI policy current with practice \u2014 weekly sweep of saved AIAs, triage results, and vendor reviews t."

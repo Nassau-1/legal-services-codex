@@ -1,4 +1,4 @@
 interface:
   display_name: "Client Letter"
-  short_description: ">"
-  default_prompt: "Use $client-letter when you need to >."
+  short_description: "Routine client correspondence from templates \u2014 appointment confirmations, document requests, brief \"we file..."
+  default_prompt: "Use $client-letter when you need to routine client correspondence from templates \u2014 appointment confirmations, document requests, brief \"we file."

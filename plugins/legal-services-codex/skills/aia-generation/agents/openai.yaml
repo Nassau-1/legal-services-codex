@@ -1,4 +1,4 @@
 interface:
   display_name: "Aia Generation"
-  short_description: ">"
-  default_prompt: "Use $aia-generation when you need to >."
+  short_description: "Run an AI impact assessment \u2014 structured intake, risk analysis, regulatory classification per regime in sco..."
+  default_prompt: "Use $aia-generation when you need to run an AI impact assessment \u2014 structured intake, risk analysis, regulatory classification per regime in sco."

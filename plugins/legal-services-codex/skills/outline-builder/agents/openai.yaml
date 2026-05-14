@@ -1,4 +1,4 @@
 interface:
   display_name: "Outline Builder"
-  short_description: ">"
-  default_prompt: "Use $outline-builder when you need to >."
+  short_description: "Build or extend a course outline in your format, from class notes and casebook."
+  default_prompt: "Use $outline-builder when you need to build or extend a course outline in your format, from class notes and casebook."

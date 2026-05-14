@@ -1,4 +1,4 @@
 interface:
   display_name: "Review Proposals"
-  short_description: ">"
-  default_prompt: "Use $review-proposals when you need to >."
+  short_description: "Review and approve (or reject) pending playbook update proposals from the playbook-monitor agent and apply..."
+  default_prompt: "Use $review-proposals when you need to review and approve (or reject) pending playbook update proposals from the playbook-monitor agent and apply."

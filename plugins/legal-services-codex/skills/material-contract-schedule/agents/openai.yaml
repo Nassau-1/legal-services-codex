@@ -1,4 +1,4 @@
 interface:
   display_name: "Material Contract Schedule"
-  short_description: ">"
-  default_prompt: "Use $material-contract-schedule when you need to >."
+  short_description: "Build the material contracts disclosure schedule from diligence findings, applying the purchase agreement's..."
+  default_prompt: "Use $material-contract-schedule when you need to build the material contracts disclosure schedule from diligence findings, applying the purchase agreement's."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Takedown"
-  short_description: ">"
-  default_prompt: "Use $takedown when you need to >."
+  short_description: "Draft a DMCA takedown notice, triage one you received, or draft a \u00a7512(g) counter-notice."
+  default_prompt: "Use $takedown when you need to draft a DMCA takedown notice, triage one you received, or draft a \u00a7512(g) counter-notice."
