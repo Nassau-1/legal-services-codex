@@ -1,4 +1,0 @@
-interface:
-  display_name: "Corporate Legal Tabular Review"
-  short_description: "Run cited diligence review over a document set"
-  default_prompt: "Use $02-corporate-legal-tabular-review to build a cited diligence grid from a VDR folder."

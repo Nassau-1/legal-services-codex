@@ -1,4 +1,0 @@
-interface:
-  display_name: "Semester Handoff"
-  short_description: ">"
-  default_prompt: "Use $semester-handoff when you need to >."

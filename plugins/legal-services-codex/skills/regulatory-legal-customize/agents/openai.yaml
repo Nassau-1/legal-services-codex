@@ -1,4 +1,0 @@
-interface:
-  display_name: "Regulatory Legal Customize"
-  short_description: ">"
-  default_prompt: "Use $regulatory-legal-customize when you need to >."

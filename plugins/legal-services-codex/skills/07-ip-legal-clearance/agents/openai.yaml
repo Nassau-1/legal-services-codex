@@ -1,4 +1,0 @@
-interface:
-  display_name: "IP Legal Clearance"
-  short_description: "Run first-pass trademark clearance screening"
-  default_prompt: "Use $07-ip-legal-clearance to run a first-pass trademark clearance screen."

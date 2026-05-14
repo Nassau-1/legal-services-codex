@@ -1,4 +1,0 @@
-interface:
-  display_name: "Litigation Legal Matter Workspace"
-  short_description: "Manage matter workspaces for multi-client practices \u2014 create, list, switch, close, or detach the active mat..."
-  default_prompt: "Use $litigation-legal-matter-workspace when you need to manage matter workspaces for multi-client practices \u2014 create, list, switch, close, or detach the active mat."

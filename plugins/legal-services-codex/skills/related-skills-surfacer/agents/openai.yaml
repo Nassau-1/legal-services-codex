@@ -1,4 +1,0 @@
-interface:
-  display_name: "Related Skills Surfacer"
-  short_description: ">"
-  default_prompt: "Use $related-skills-surfacer when you need to >."

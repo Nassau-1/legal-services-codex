@@ -81,12 +81,7 @@ Once installed, the plugin can be used in two ways:
 - call a direct exported skill such as `$dsar-response`, `$claim-chart`, or `$clearance`
 - call a workflow entrypoint such as `$renewal-watcher`, `$diligence-grid`, or `$docket-watcher`
 
-Some upstream skill names repeat across practice areas, especially `review`, `customize`, and `cold-start-interview`. The installable plugin auto-prefixes only the duplicated ones, so use names such as `$commercial-legal-review` or `$product-legal-cold-start-interview` where needed.
-
-The plugin also ships a small discovery layer for Codex UX:
-
-- `$00-legal-services-index` for breadth-first browsing
-- explicit practice-area aliases such as `$01-commercial-legal-review`, `$03-privacy-legal-dsar-response`, and `$05-litigation-legal-claim-chart`
+Some upstream skill names repeat across practice areas. The installable plugin filters out internal scaffolding skills and auto-prefixes only duplicated end-user names that remain, so use names such as `$review`, `$nda-review`, `$tabular-review`, `$dsar-response`, or `$ai-governance-legal-use-case-triage`.
 
 ## Verification
 

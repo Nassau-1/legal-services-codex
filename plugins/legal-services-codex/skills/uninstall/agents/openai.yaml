@@ -1,4 +1,0 @@
-interface:
-  display_name: "Uninstall"
-  short_description: ">"
-  default_prompt: "Use $uninstall when you need to >."

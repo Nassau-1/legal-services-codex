@@ -1,4 +1,0 @@
-interface:
-  display_name: "Employment Legal Termination Review"
-  short_description: "Review proposed terminations against jurisdiction-specific flags"
-  default_prompt: "Use $06-employment-legal-termination-review to review a proposed employee termination."

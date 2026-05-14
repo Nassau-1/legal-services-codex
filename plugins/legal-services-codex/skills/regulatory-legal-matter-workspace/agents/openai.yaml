@@ -1,4 +1,0 @@
-interface:
-  display_name: "Regulatory Legal Matter Workspace"
-  short_description: "Manage matter workspaces \u2014 create, list, switch, close, or detach the active matter (practice-level)."
-  default_prompt: "Use $regulatory-legal-matter-workspace when you need to manage matter workspaces \u2014 create, list, switch, close, or detach the active matter (practice-level)."

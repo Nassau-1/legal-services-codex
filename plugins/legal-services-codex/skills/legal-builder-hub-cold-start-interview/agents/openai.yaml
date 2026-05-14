@@ -1,4 +1,0 @@
-interface:
-  display_name: "Legal Builder Hub Cold Start Interview"
-  short_description: ">"
-  default_prompt: "Use $legal-builder-hub-cold-start-interview when you need to >."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Litigation Legal Customize"
-  short_description: ">"
-  default_prompt: "Use $litigation-legal-customize when you need to >."

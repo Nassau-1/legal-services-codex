@@ -1,4 +1,0 @@
-interface:
-  display_name: "Product Legal Matter Workspace"
-  short_description: ">"
-  default_prompt: "Use $product-legal-matter-workspace when you need to >."

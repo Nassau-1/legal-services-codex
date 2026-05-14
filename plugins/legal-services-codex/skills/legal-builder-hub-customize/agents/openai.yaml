@@ -1,4 +1,0 @@
-interface:
-  display_name: "Legal Builder Hub Customize"
-  short_description: ">"
-  default_prompt: "Use $legal-builder-hub-customize when you need to >."

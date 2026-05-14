@@ -1,4 +1,0 @@
-interface:
-  display_name: "Commercial Legal Cold Start Interview"
-  short_description: ">"
-  default_prompt: "Use $commercial-legal-cold-start-interview when you need to >."

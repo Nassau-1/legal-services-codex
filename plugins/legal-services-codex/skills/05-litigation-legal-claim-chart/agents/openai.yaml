@@ -1,4 +1,0 @@
-interface:
-  display_name: "Litigation Legal Claim Chart"
-  short_description: "Build claim charts for patent or civil matters"
-  default_prompt: "Use $05-litigation-legal-claim-chart to build a claim chart from asserted claims and source materials."

@@ -7,4 +7,5 @@ Use reverse chronological order. Keep entries factual and date-stamped.
 - Created `legal-services-codex` as a separate governed repository under `projects/`.
 - Imported Anthropic's `claude-for-legal` source content into preserved `plugins/vertical-plugins/`, `plugins/partner-built/`, and `managed-agent-cookbooks/` provenance layers.
 - Added a Codex export pipeline, managed-agent migration map, installable plugin build, connector documentation, and legal-specific task packs following the `financial-services-codex` porting method.
-- Added a `v0.1.1` plugin discovery layer with a top-level index skill and explicit practice-area alias entrypoints so Codex plugin previews and first-run UX reflect more than the five task-pack skills.
+- Added a `v0.1.1` plugin discovery layer with a top-level index skill and explicit practice-area alias entrypoints.
+- Corrected the installable plugin surface in `v0.1.2` to match the financial porting method more closely by removing synthetic preview skills and filtering internal scaffolding skills from the top-level install bundle.

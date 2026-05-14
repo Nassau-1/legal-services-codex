@@ -1,4 +1,0 @@
-interface:
-  display_name: "Law Student Cold Start Interview"
-  short_description: ">"
-  default_prompt: "Use $law-student-cold-start-interview when you need to >."

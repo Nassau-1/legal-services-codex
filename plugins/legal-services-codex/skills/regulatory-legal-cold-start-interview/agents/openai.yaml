@@ -1,4 +1,0 @@
-interface:
-  display_name: "Regulatory Legal Cold Start Interview"
-  short_description: "Cold-start interview \u2014 builds your watchlist, indexes the policy library, and learns your materiality thres..."
-  default_prompt: "Use $regulatory-legal-cold-start-interview when you need to cold-start interview \u2014 builds your watchlist, indexes the policy library, and learns your materiality thres."

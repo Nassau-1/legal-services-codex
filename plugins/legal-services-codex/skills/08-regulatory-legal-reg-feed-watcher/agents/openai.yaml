@@ -1,4 +1,0 @@
-interface:
-  display_name: "Regulatory Legal Feed Watcher"
-  short_description: "Check tracked regulatory feeds and summarize changes"
-  default_prompt: "Use $08-regulatory-legal-reg-feed-watcher to summarize what's new in the tracked regulatory feeds."

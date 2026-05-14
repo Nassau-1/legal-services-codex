@@ -1,4 +1,0 @@
-interface:
-  display_name: "Comments"
-  short_description: "Review open NPRM comment periods, log decisions, track deadlines."
-  default_prompt: "Use $comments when you need to review open NPRM comment periods, log decisions, track deadlines."

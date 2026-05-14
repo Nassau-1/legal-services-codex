@@ -1,4 +1,0 @@
-interface:
-  display_name: "Privacy Legal DSAR Response"
-  short_description: "Draft first-pass DSAR responses with review framing"
-  default_prompt: "Use $03-privacy-legal-dsar-response to draft a first-pass DSAR response."

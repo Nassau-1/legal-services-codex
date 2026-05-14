@@ -1,4 +1,0 @@
-interface:
-  display_name: "Session"
-  short_description: ">"
-  default_prompt: "Use $session when you need to >."

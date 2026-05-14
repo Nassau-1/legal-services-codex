@@ -1,4 +1,0 @@
-interface:
-  display_name: "Corporate Legal Matter Workspace"
-  short_description: ">"
-  default_prompt: "Use $corporate-legal-matter-workspace when you need to >."
