@@ -138,22 +138,43 @@ def rewrite_skill_text(text: str) -> str:
     return text.replace("../../managed-agent-map.md", "../../../codex/managed-agent-map.md")
 
 
-def normalize_frontmatter_name(text: str, skill_name: str) -> str:
-    return re.sub(
-        r"(?m)^name:\s*.+$",
-        f"name: {skill_name}",
-        text,
-        count=1,
-    )
+def split_frontmatter(text: str) -> tuple[str, dict[str, str], str]:
+    match = re.search(r"(?ms)^---\r?\n(.*?)\r?\n---\r?\n?", text)
+    if not match:
+        return "", {}, text
+    loaded = yaml.safe_load(match.group(1)) or {}
+    meta = {str(key): str(value).strip() for key, value in loaded.items()}
+    return text[: match.start()], meta, text[match.end() :]
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
-    match = re.search(r"(?ms)^---\r?\n(.*?)\r?\n---\r?\n?", text)
-    if not match:
-        return {}, text
-    loaded = yaml.safe_load(match.group(1)) or {}
-    meta = {str(key): str(value).strip() for key, value in loaded.items()}
-    return meta, text[match.end() :]
+    _, meta, body = split_frontmatter(text)
+    return meta, body
+
+
+def render_simple_frontmatter(skill_name: str, description: str) -> str:
+    frontmatter = yaml.safe_dump(
+        {
+            "name": skill_name,
+            "description": description,
+        },
+        allow_unicode=False,
+        sort_keys=False,
+        width=100000,
+    ).strip()
+    return f"---\n{frontmatter}\n---\n"
+
+
+def normalize_installable_skill_text(text: str, skill_name: str, ui: dict[str, str]) -> str:
+    rewritten = rewrite_skill_text(text)
+    prefix, meta, body = split_frontmatter(rewritten)
+    description = normalize_description_text(meta.get("description", "")) or ui["short_description"]
+    normalized = render_simple_frontmatter(skill_name, description)
+
+    preserved_parts = [part.strip() for part in (prefix, body) if part.strip()]
+    if preserved_parts:
+        normalized += "\n" + "\n\n".join(preserved_parts).lstrip() + "\n"
+    return normalized
 
 
 def slug_to_title(slug: str) -> str:
@@ -230,7 +251,7 @@ def copy_skill_directory(source_dir: Path, destination_skill: Path, skill_name: 
     skill_file = destination_skill / "SKILL.md"
     if skill_file.exists():
         skill_text = skill_file.read_text(encoding="utf-8")
-        skill_text = normalize_frontmatter_name(rewrite_skill_text(skill_text), skill_name)
+        skill_text = normalize_installable_skill_text(skill_text, skill_name, ui)
         skill_file.write_text(skill_text, encoding="utf-8")
     write_openai_yaml(destination_skill, ui)
 

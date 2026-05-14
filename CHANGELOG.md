@@ -10,3 +10,4 @@ Use reverse chronological order. Keep entries factual and date-stamped.
 - Added a `v0.1.1` plugin discovery layer with a top-level index skill and explicit practice-area alias entrypoints.
 - Corrected the installable plugin surface in `v0.1.2` to match the financial porting method more closely by removing synthetic preview skills and filtering internal scaffolding skills from the top-level install bundle.
 - Corrected install metadata in `v0.1.3` so generated `openai.yaml` descriptions are parsed from multiline frontmatter correctly and surface real skill blurbs instead of malformed placeholders.
+- Corrected installable skill frontmatter in `v0.1.4` so all 112 published skills use simple Codex-readable `SKILL.md` metadata and upstream `user-invocable: false` flags are stripped from the plugin bundle.
