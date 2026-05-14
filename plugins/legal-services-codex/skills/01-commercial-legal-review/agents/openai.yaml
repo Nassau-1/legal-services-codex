@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commercial Legal Review"
+  short_description: "Route and review inbound commercial agreements"
+  default_prompt: "Use $01-commercial-legal-review to review an inbound MSA, NDA, or SaaS agreement."

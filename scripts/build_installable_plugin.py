@@ -16,6 +16,112 @@ EXPORT_REGISTRY = ROOT / "codex" / "registry.json"
 COORDINATORS_REGISTRY = ROOT / "codex" / "coordinators" / "registry.json"
 TASK_PACKS_REGISTRY = ROOT / "codex" / "task-packs" / "registry.json"
 
+SYNTHETIC_SKILLS = [
+    {
+        "name": "00-legal-services-index",
+        "mode": "index",
+        "display_name": "Legal Services Index",
+        "short_description": "Browse the plugin's main practice areas and entry skills",
+        "default_prompt": "Use $00-legal-services-index to find the right legal-services skill for a task.",
+    },
+    {
+        "name": "01-commercial-legal-review",
+        "mode": "alias",
+        "target_skill": "review",
+        "display_name": "Commercial Legal Review",
+        "short_description": "Route and review inbound commercial agreements",
+        "default_prompt": "Use $01-commercial-legal-review to review an inbound MSA, NDA, or SaaS agreement.",
+    },
+    {
+        "name": "02-corporate-legal-tabular-review",
+        "mode": "alias",
+        "target_skill": "tabular-review",
+        "display_name": "Corporate Legal Tabular Review",
+        "short_description": "Run cited diligence review over a document set",
+        "default_prompt": "Use $02-corporate-legal-tabular-review to build a cited diligence grid from a VDR folder.",
+    },
+    {
+        "name": "03-privacy-legal-dsar-response",
+        "mode": "alias",
+        "target_skill": "dsar-response",
+        "display_name": "Privacy Legal DSAR Response",
+        "short_description": "Draft first-pass DSAR responses with review framing",
+        "default_prompt": "Use $03-privacy-legal-dsar-response to draft a first-pass DSAR response.",
+    },
+    {
+        "name": "04-product-legal-launch-review",
+        "mode": "alias",
+        "target_skill": "launch-review",
+        "display_name": "Product Legal Launch Review",
+        "short_description": "Review launches against product-legal calibration",
+        "default_prompt": "Use $04-product-legal-launch-review to review a product launch for legal risk.",
+    },
+    {
+        "name": "05-litigation-legal-claim-chart",
+        "mode": "alias",
+        "target_skill": "claim-chart",
+        "display_name": "Litigation Legal Claim Chart",
+        "short_description": "Build claim charts for patent or civil matters",
+        "default_prompt": "Use $05-litigation-legal-claim-chart to build a claim chart from asserted claims and source materials.",
+    },
+    {
+        "name": "06-employment-legal-termination-review",
+        "mode": "alias",
+        "target_skill": "termination-review",
+        "display_name": "Employment Legal Termination Review",
+        "short_description": "Review proposed terminations against jurisdiction-specific flags",
+        "default_prompt": "Use $06-employment-legal-termination-review to review a proposed employee termination.",
+    },
+    {
+        "name": "07-ip-legal-clearance",
+        "mode": "alias",
+        "target_skill": "clearance",
+        "display_name": "IP Legal Clearance",
+        "short_description": "Run first-pass trademark clearance screening",
+        "default_prompt": "Use $07-ip-legal-clearance to run a first-pass trademark clearance screen.",
+    },
+    {
+        "name": "08-regulatory-legal-reg-feed-watcher",
+        "mode": "alias",
+        "target_skill": "reg-feed-watcher",
+        "display_name": "Regulatory Legal Feed Watcher",
+        "short_description": "Check tracked regulatory feeds and summarize changes",
+        "default_prompt": "Use $08-regulatory-legal-reg-feed-watcher to summarize what's new in the tracked regulatory feeds.",
+    },
+    {
+        "name": "09-ai-governance-legal-use-case-triage",
+        "mode": "alias",
+        "target_skill": "ai-governance-legal-use-case-triage",
+        "display_name": "AI Governance Legal Use Case Triage",
+        "short_description": "Triage proposed AI use cases against governance rules",
+        "default_prompt": "Use $09-ai-governance-legal-use-case-triage to classify a proposed AI use case against governance requirements.",
+    },
+    {
+        "name": "10-legal-clinic-client-intake",
+        "mode": "alias",
+        "target_skill": "client-intake",
+        "display_name": "Legal Clinic Client Intake",
+        "short_description": "Run structured clinic intake with issue spotting",
+        "default_prompt": "Use $10-legal-clinic-client-intake to run a structured clinic intake.",
+    },
+    {
+        "name": "11-law-student-socratic-drill",
+        "mode": "alias",
+        "target_skill": "socratic-drill",
+        "display_name": "Law Student Socratic Drill",
+        "short_description": "Run Socratic drilling without giving away the answer",
+        "default_prompt": "Use $11-law-student-socratic-drill to practice Socratic questioning on a doctrine.",
+    },
+    {
+        "name": "12-legal-builder-hub-skill-installer",
+        "mode": "alias",
+        "target_skill": "skill-installer",
+        "display_name": "Legal Builder Hub Skill Installer",
+        "short_description": "Install community legal skills with trust checks",
+        "default_prompt": "Use $12-legal-builder-hub-skill-installer to install a community legal skill with review gates.",
+    },
+]
+
 
 WORKFLOW_UI = {
     "diligence-grid": {
@@ -204,6 +310,19 @@ def write_openai_yaml(skill_dir: Path, ui: dict[str, str]) -> None:
     (agents_dir / "openai.yaml").write_text(content, encoding="utf-8")
 
 
+def write_synthetic_skill(skill_dir: Path, name: str, description: str, body: str, ui: dict[str, str]) -> None:
+    skill_dir.mkdir(parents=True, exist_ok=True)
+    content = (
+        f"---\n"
+        f"name: {name}\n"
+        f"description: {description}\n"
+        f"---\n\n"
+        f"{body.rstrip()}\n"
+    )
+    (skill_dir / "SKILL.md").write_text(content, encoding="utf-8")
+    write_openai_yaml(skill_dir, ui)
+
+
 def copy_skill_directory(source_dir: Path, destination_skill: Path, skill_name: str, ui: dict[str, str]) -> None:
     shutil.copytree(source_dir, destination_skill)
     skill_file = destination_skill / "SKILL.md"
@@ -353,6 +472,64 @@ def main() -> None:
     exported_skill_count = 0
     workflow_skill_count = 0
     command_wrapper_count = 0
+    synthetic_skill_count = 0
+
+    for entry in SYNTHETIC_SKILLS:
+        destination_skill = SKILLS_ROOT / entry["name"]
+        ui = {
+            "display_name": entry["display_name"],
+            "short_description": entry["short_description"],
+            "default_prompt": entry["default_prompt"],
+        }
+        if entry["mode"] == "index":
+            description = "Start here to browse the main legal-services practice areas, workflows, and entry skills."
+            body = """# Legal Services Index
+
+Use this discovery skill when you want help choosing the right skill from the full legal-services corpus.
+
+Recommended entrypoints by area:
+
+- Commercial legal: `$01-commercial-legal-review`, `$review`, `$nda-review`, `$vendor-agreement-review`
+- Corporate legal: `$02-corporate-legal-tabular-review`, `$tabular-review`, `$written-consent`, `$closing-checklist`
+- Privacy legal: `$03-privacy-legal-dsar-response`, `$dsar-response`, `$dpa-review`, `$privacy-legal-use-case-triage`
+- Product legal: `$04-product-legal-launch-review`, `$launch-review`, `$is-this-a-problem`, `$marketing-claims-review`
+- Litigation legal: `$05-litigation-legal-claim-chart`, `$claim-chart`, `$matter-intake`, `$subpoena-triage`
+- Employment legal: `$06-employment-legal-termination-review`, `$termination-review`, `$hiring-review`, `$worker-classification`
+- IP legal: `$07-ip-legal-clearance`, `$clearance`, `$oss-review`, `$takedown`
+- Regulatory legal: `$08-regulatory-legal-reg-feed-watcher`, `$reg-feed-watcher`, `$policy-diff`, `$gaps`
+- AI governance legal: `$09-ai-governance-legal-use-case-triage`, `$ai-governance-legal-use-case-triage`, `$aia-generation`, `$vendor-ai-review`
+- Legal clinic: `$10-legal-clinic-client-intake`, `$client-intake`, `$memo`, `$deadlines`
+- Law student: `$11-law-student-socratic-drill`, `$socratic-drill`, `$bar-prep-questions`, `$outline-builder`
+- Community skill workflows: `$12-legal-builder-hub-skill-installer`, `$registry-browser`, `$skills-qa`
+
+Managed workflow packs:
+
+- `$diligence-grid`
+- `$docket-watcher`
+- `$launch-radar`
+- `$reg-monitor`
+- `$renewal-watcher`
+
+If the user's intent is ambiguous, route them to the closest practice-area entrypoint above rather than guessing a niche skill immediately.
+"""
+        else:
+            target = entry["target_skill"]
+            description = f"Alias skill for `${target}`. Use this discoverability wrapper when the explicit practice-area-prefixed name is clearer."
+            body = f"""# {entry['display_name']}
+
+This is a discoverability alias for `${target}`.
+
+Use it when the explicit practice-area-prefixed entrypoint is clearer than the underlying base skill name.
+
+When invoked:
+
+1. Treat `${target}` as the canonical underlying skill.
+2. Follow the full workflow and constraints from `${target}`.
+3. Preserve the same review framing, source discipline, and connector assumptions as the underlying skill.
+"""
+
+        write_synthetic_skill(destination_skill, entry["name"], description, body, ui)
+        synthetic_skill_count += 1
 
     for entry in entries:
         destination_skill = SKILLS_ROOT / entry["name"]
@@ -380,11 +557,12 @@ def main() -> None:
 
     summary = {
         "plugin": "legal-services-codex",
+        "synthetic_skills": synthetic_skill_count,
         "workflow_skills": workflow_skill_count,
         "exported_skills": exported_skill_count,
         "command_wrappers": command_wrapper_count,
-        "skill_count": len(entries),
-        "skills": [entry["name"] for entry in entries],
+        "skill_count": len(entries) + synthetic_skill_count,
+        "skills": [entry["name"] for entry in SYNTHETIC_SKILLS] + [entry["name"] for entry in entries],
     }
     print(json.dumps(summary))
 

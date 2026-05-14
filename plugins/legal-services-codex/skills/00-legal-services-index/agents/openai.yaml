@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Services Index"
+  short_description: "Browse the plugin's main practice areas and entry skills"
+  default_prompt: "Use $00-legal-services-index to find the right legal-services skill for a task."

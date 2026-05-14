@@ -83,6 +83,11 @@ Once installed, the plugin can be used in two ways:
 
 Some upstream skill names repeat across practice areas, especially `review`, `customize`, and `cold-start-interview`. The installable plugin auto-prefixes only the duplicated ones, so use names such as `$commercial-legal-review` or `$product-legal-cold-start-interview` where needed.
 
+The plugin also ships a small discovery layer for Codex UX:
+
+- `$00-legal-services-index` for breadth-first browsing
+- explicit practice-area aliases such as `$01-commercial-legal-review`, `$03-privacy-legal-dsar-response`, and `$05-litigation-legal-claim-chart`
+
 ## Verification
 
 Before closing porting work:

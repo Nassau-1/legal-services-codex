@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Clinic Client Intake"
+  short_description: "Run structured clinic intake with issue spotting"
+  default_prompt: "Use $10-legal-clinic-client-intake to run a structured clinic intake."

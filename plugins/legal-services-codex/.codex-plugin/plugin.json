@@ -1,6 +1,6 @@
 {
   "name": "legal-services-codex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Installable Codex plugin for the full legal-services corpus: practice-area skills, partner-built skills, and managed-agent task packs.",
   "author": {
     "name": "Enzo Terrier",
@@ -33,9 +33,9 @@
     "privacyPolicyURL": "https://github.com/Nassau-1/legal-services-codex",
     "termsOfServiceURL": "https://github.com/Nassau-1/legal-services-codex",
     "defaultPrompt": [
-      "Use $dsar-response to draft a first-pass DSAR response.",
-      "Use $commercial-legal-review to route and review an inbound commercial agreement.",
-      "Use $diligence-grid to run a Codex task-pack over a diligence folder."
+      "Use $00-legal-services-index to find the right legal-services skill for a task.",
+      "Use $01-commercial-legal-review to route and review an inbound commercial agreement.",
+      "Use $03-privacy-legal-dsar-response to draft a first-pass DSAR response."
     ],
     "brandColor": "#5A2A1D",
     "screenshots": []

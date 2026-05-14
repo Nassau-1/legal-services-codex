@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Governance Legal Use Case Triage"
+  short_description: "Triage proposed AI use cases against governance rules"
+  default_prompt: "Use $09-ai-governance-legal-use-case-triage to classify a proposed AI use case against governance requirements."

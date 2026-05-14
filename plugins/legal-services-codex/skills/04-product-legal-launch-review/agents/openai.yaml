@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Legal Launch Review"
+  short_description: "Review launches against product-legal calibration"
+  default_prompt: "Use $04-product-legal-launch-review to review a product launch for legal risk."

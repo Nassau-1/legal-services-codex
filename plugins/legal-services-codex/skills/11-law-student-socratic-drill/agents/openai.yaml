@@ -1,0 +1,4 @@
+interface:
+  display_name: "Law Student Socratic Drill"
+  short_description: "Run Socratic drilling without giving away the answer"
+  default_prompt: "Use $11-law-student-socratic-drill to practice Socratic questioning on a doctrine."

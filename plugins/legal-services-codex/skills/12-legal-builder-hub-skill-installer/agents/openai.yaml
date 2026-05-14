@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Builder Hub Skill Installer"
+  short_description: "Install community legal skills with trust checks"
+  default_prompt: "Use $12-legal-builder-hub-skill-installer to install a community legal skill with review gates."
